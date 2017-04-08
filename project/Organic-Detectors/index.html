@@ -38,7 +38,7 @@
 
   
 
-  <title>Organic Detectors | Jake Connor</title>
+  <title>Organic Detectors for Radiation Detection | Jake Connor</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -122,11 +122,16 @@
 <article class="article article-project" itemscope itemtype="http://schema.org/Article">
 
   
+  <div class="article-header">
+    <img src="/img//orgrad/y1.jpg" class="article-banner" itemprop="image">
+    <span class="article-header-caption">A Batch of 4 Detectors, Constructed Directly in Quad Packages</span>
+  </div>
+  
 
   <div class="article-container">
 
     <div class="pub-title">
-      <h1 itemprop="name">Organic Detectors</h1>
+      <h1 itemprop="name">Organic Detectors for Radiation Detection</h1>
       <span class="pub-authors" itemprop="author">&nbsp;</span>
       <span class="pull-right">
         
@@ -141,28 +146,28 @@
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Organic%20Detectors&amp;url=https%3a%2f%2fjakeconnor.github.io%2fproject%2fOrganic-Detectors%2f"
+         href="https://twitter.com/intent/tweet?text=Organic%20Detectors%20for%20Radiation%20Detection&amp;url=https%3a%2f%2fjakeconnor.github.io%2fproject%2fOrganic-Detectors%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fjakeconnor.github.io%2fproject%2fOrganic-Detectors%2f&amp;title=Organic%20Detectors"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fjakeconnor.github.io%2fproject%2fOrganic-Detectors%2f&amp;title=Organic%20Detectors%20for%20Radiation%20Detection"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fjakeconnor.github.io%2fproject%2fOrganic-Detectors%2f&amp;title=Organic%20Detectors"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fjakeconnor.github.io%2fproject%2fOrganic-Detectors%2f&amp;title=Organic%20Detectors%20for%20Radiation%20Detection"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Organic%20Detectors&amp;body=https%3a%2f%2fjakeconnor.github.io%2fproject%2fOrganic-Detectors%2f">
+         href="mailto:?subject=Organic%20Detectors%20for%20Radiation%20Detection&amp;body=https%3a%2f%2fjakeconnor.github.io%2fproject%2fOrganic-Detectors%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -176,7 +181,43 @@
     
 
     <div class="article-style" itemprop="articleBody">
-      
+      <p>As my fourth year (capstone) project, I was part of a team that developed organic semiconducting alpha detectors. The team has not yet proven that the devices can detect alpha particles, but has showed a high degree of sensitivity to light, which is a common predictor of success at detecting radiation.</p>
+
+<p>Typical radiation detectors are made from high purity Silicon or Germanium (HPGe), but have a couple drawbacks. The materials are brittle and inflexible, so any sensor must be made in it&rsquo;s final shape. Additionally large detectors require weeks or even months of careful growth, with any impurities or imperfections reducing the efficiency of the detector. A major defect could mean scrapping the entire grown crystal and starting over, and these large detectors are highly expensive.</p>
+
+
+<figure >
+    
+        <img src="/img/orgrad/y5.jpg" alt="An array of Schottky Layout Detectors in Alq3" />
+    
+    
+    <caption>
+        <p>
+        An array of Schottky Layout Detectors in Alq3
+        
+            
+        
+        </p> 
+    </caption>
+    
+</figure>
+
+
+<p>The organic materials we pursued are flexible, meaning we could build a detector and roll it into a tube, and place a source in the center, maximizing solid-angle coverage. Additionally the fabrication processes we use do not require careful crystal growth, and could be used to manufacture large detectors with ease.</p>
+
+<p>My contribution to the project was primarily in modeling the radiation interaction with our detectors. For alpha interaction, this was primarily limited to using <a href="http://www.srim.org/" target="_blank">SRIM</a> to determine a lower bound on the detector thickness, as alpha particles are easily stopped. Once we had determined that the thickness would be constrained by the manufacturing process rather than alpha interaction, I moved on to modeling beta interaction.</p>
+
+
+<figure >
+    
+        <img src="/img/orgrad/y6.png"  />
+    
+    
+</figure>
+
+
+<p>For detecting beta particles, the model is more important. Beta particles are difficult to stop, and will travel far in a material in a straight line. Fortunately for the detector designers, beta particles don&rsquo;t travel in a straight line in a detector. Unfortunately for me, their path is complicated to model. I implemented a monte-carlo simulation based on scattering cross sections and using the relativistic Bethe-Bloch equations for linear stopping power. This simulation allows extraction of useful parameters like effective stopping power, range, and straggle, and would support the design process for any beta detectors.</p>
+
     </div>
 
   </div>
@@ -186,9 +227,12 @@
   <nav>
   <ul class="pager">
     
+    <li class="previous"><a href="https://jakeconnor.github.io/project/MDA-Antennas/"><span
+      aria-hidden="true">&larr;</span> Antennas for Satellites and Space Probes</a></li>
+    
 
     
-    <li class="next"><a href="https://jakeconnor.github.io/project/MDA-Antennas/">MDA Antennas <span
+    <li class="next"><a href="https://jakeconnor.github.io/project/cprt/">Carleton Planetary Robotics Team <span
       aria-hidden="true">&rarr;</span></a></li>
     
   </ul>

@@ -19,8 +19,11 @@
 
 &lt;p&gt;We have had a couple false starts over the years, but this year succeeded in building a rover, and bringing it with us to Manchester UK, where we competed against teams from UK, India, Bangladesh, Egypt, and Poland. We were very impressed with the rover’s performance, and are looking forward to iterating on the design this year, and making many improvements.&lt;/p&gt;
 
-&lt;p&gt;It’s difficult to get any new major project off the ground, and this team was no exception. In our first year we were designing for NASA’s Robotic Mining Challenge, but at the end of that year the competition changed its rules to prevent non-US teams from competing. We spent the following year in a state of limbo, hesitant to throw away the good work we’d done, but with little drive to move forward in the rover’s development. We continued working and learning, but did not physically build our design.
-Last September, the team set our sights on the rover challenge series, intending to design a new rover from the ground up to compete this summer. We worked hard, and were able to make it in time for the UKURC, in July.
+&lt;p&gt;It’s difficult to get any new major project off the ground, and this team was no exception. In our first year we were designing for NASA’s Robotic Mining Challenge, but at the end of that year the competition changed its rules to prevent non-US teams from competing. We spent the following year in a state of limbo, hesitant to throw away the good work we’d done, but with little drive to move forward in the rover’s development.&lt;/p&gt;
+
+&lt;p&gt;We continued working and learning, but did not physically build our design.
+Last September, the team set our sights on the rover challenge series, intending to design a new rover from the ground up to compete this summer. We worked hard, and were able to make it in time for the UKURC, in July.&lt;/p&gt;
+
 
 &lt;figure &gt;
     
@@ -37,9 +40,11 @@ Last September, the team set our sights on the rover challenge series, intending
     &lt;/caption&gt;
     
 &lt;/figure&gt;
-&lt;/p&gt;
 
-&lt;p&gt;This year I will return to my position as an electronics lead, after taking a year off while working out of town. The first goal of the electronics team this year will be to improve the assembly process for the rover, with better cable routing, cable color coding, and the use of latching connectors wherever possible. The last item there was spurred by an incident at the competition, where after carrying our rover from the hotel to the competition, a motor wire had come loose in a way that we couldn’t see with simple visual inspection. We will also be improving the testability of the internal electronics. We will achieve this by adjusting layout to make components easier to probe (in one late-night lab session my unsteady probe hand shorted a power module and fried it, requiring it be swapped with a spare), and exposing test points for components that aren’t easily probed. And since the team now has a completed rover, we will be running regular operation scenarios, which will open our eyes to more subtle problems and areas for improvement.&lt;/p&gt;
+
+&lt;p&gt;This year I will return to my position as an electronics lead, after taking a year off while working out of town. The first goal of the electronics team this year will be to improve the assembly process for the rover, with better cable routing, cable color coding, and the use of latching connectors wherever possible. The last item there was spurred by an incident at the competition, where after carrying our rover from the hotel to the competition, a motor wire had come loose in a way that we couldn’t see with simple visual inspection.&lt;/p&gt;
+
+&lt;p&gt;We will also be improving the testability of the internal electronics. We will achieve this by adjusting layout to make components easier to probe (in one late-night lab session my unsteady probe hand shorted a power module and fried it, requiring it be swapped with a spare), and exposing test points for components that aren’t easily probed. And since the team now has a completed rover, we will be running regular operation scenarios, which will open our eyes to more subtle problems and areas for improvement.&lt;/p&gt;
 
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
@@ -84,57 +89,67 @@ Last September, the team set our sights on the rover challenge series, intending
     </item>
     
     <item>
-      <title>DOE FreeScale</title>
-      <link>https://jakeconnor.github.io/project/DOE-FreeScale/</link>
-      <pubDate>Fri, 07 Apr 2017 01:03:44 -0400</pubDate>
+      <title>Organic Detectors for Radiation Detection</title>
+      <link>https://jakeconnor.github.io/project/Organic-Detectors/</link>
+      <pubDate>Sat, 08 Apr 2017 01:01:39 -0400</pubDate>
       
-      <guid>https://jakeconnor.github.io/project/DOE-FreeScale/</guid>
-      <description></description>
+      <guid>https://jakeconnor.github.io/project/Organic-Detectors/</guid>
+      <description>&lt;p&gt;As my fourth year (capstone) project, I was part of a team that developed organic semiconducting alpha detectors. The team has not yet proven that the devices can detect alpha particles, but has showed a high degree of sensitivity to light, which is a common predictor of success at detecting radiation.&lt;/p&gt;
+
+&lt;p&gt;Typical radiation detectors are made from high purity Silicon or Germanium (HPGe), but have a couple drawbacks. The materials are brittle and inflexible, so any sensor must be made in it&amp;rsquo;s final shape. Additionally large detectors require weeks or even months of careful growth, with any impurities or imperfections reducing the efficiency of the detector. A major defect could mean scrapping the entire grown crystal and starting over, and these large detectors are highly expensive.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/orgrad/y5.jpg&#34; alt=&#34;An array of Schottky Layout Detectors in Alq3&#34; /&gt;
+    
+    
+    &lt;caption&gt;
+        &lt;p&gt;
+        An array of Schottky Layout Detectors in Alq3
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/caption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;The organic materials we pursued are flexible, meaning we could build a detector and roll it into a tube, and place a source in the center, maximizing solid-angle coverage. Additionally the fabrication processes we use do not require careful crystal growth, and could be used to manufacture large detectors with ease.&lt;/p&gt;
+
+&lt;p&gt;My contribution to the project was primarily in modeling the radiation interaction with our detectors. For alpha interaction, this was primarily limited to using &lt;a href=&#34;http://www.srim.org/&#34; target=&#34;_blank&#34;&gt;SRIM&lt;/a&gt; to determine a lower bound on the detector thickness, as alpha particles are easily stopped. Once we had determined that the thickness would be constrained by the manufacturing process rather than alpha interaction, I moved on to modeling beta interaction.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/orgrad/y6.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;For detecting beta particles, the model is more important. Beta particles are difficult to stop, and will travel far in a material in a straight line. Fortunately for the detector designers, beta particles don&amp;rsquo;t travel in a straight line in a detector. Unfortunately for me, their path is complicated to model. I implemented a monte-carlo simulation based on scattering cross sections and using the relativistic Bethe-Bloch equations for linear stopping power. This simulation allows extraction of useful parameters like effective stopping power, range, and straggle, and would support the design process for any beta detectors.&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>DOE Optics</title>
-      <link>https://jakeconnor.github.io/project/DOE-Optics/</link>
-      <pubDate>Fri, 07 Apr 2017 01:03:35 -0400</pubDate>
-      
-      <guid>https://jakeconnor.github.io/project/DOE-Optics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DRDC Reverse</title>
-      <link>https://jakeconnor.github.io/project/DRDC-Reverse/</link>
-      <pubDate>Fri, 07 Apr 2017 01:02:22 -0400</pubDate>
-      
-      <guid>https://jakeconnor.github.io/project/DRDC-Reverse/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DRDC Muons</title>
-      <link>https://jakeconnor.github.io/project/DRDC-Muons/</link>
-      <pubDate>Fri, 07 Apr 2017 01:02:14 -0400</pubDate>
-      
-      <guid>https://jakeconnor.github.io/project/DRDC-Muons/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MDA Antennas</title>
+      <title>Antennas for Satellites and Space Probes</title>
       <link>https://jakeconnor.github.io/project/MDA-Antennas/</link>
       <pubDate>Fri, 07 Apr 2017 01:02:01 -0400</pubDate>
       
       <guid>https://jakeconnor.github.io/project/MDA-Antennas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Organic Detectors</title>
-      <link>https://jakeconnor.github.io/project/Organic-Detectors/</link>
-      <pubDate>Fri, 07 Apr 2017 01:01:39 -0400</pubDate>
-      
-      <guid>https://jakeconnor.github.io/project/Organic-Detectors/</guid>
-      <description></description>
+      <description>&lt;p&gt;I spent a year working at MDA Satellite Systems, in Montreal, designing antennas for various spacecraft.&lt;/p&gt;
+
+&lt;p&gt;My primary focus was on communications-oriented satellites, with demanding specifications and tight uncertainty budgets. I worked on projects from the early proposal stage, through (successful) contract negotiations, and through the program phase to final testing and shipping.&lt;/p&gt;
+
+&lt;p&gt;I spent significant time on Hylas-4 (pictured above), a High Throughput Satellite with 66 Ka-band user beams divided over 4 reflectors on 2 pallets. As part of the team I worked to develop RF mitigations for mechanical issues, determine assembly tolerances, and produced reports and presentations.&lt;/p&gt;
+
+&lt;p&gt;I additionally developed a series of tools used to automatically perform tolerance sensitivity analyses on general spacecraft, and produced simple reporting data on performance effects.
+I additionally produces a specialized version of the tool for steerable antennas, that automatically determined the steering compensation that would best mitigate misalignments, and extract performance metrics from the re-steered antenna. As well as being useful on any steerable antenna project, this tool was used to justify selection of cheaper manufacturing techniques on a large-quantity project.&lt;/p&gt;
+
+&lt;p&gt;Finally I worked on a series of internal tools, integrating functionality from many tools into fewer (minimizing engineering time running many programs), automating common tasks, and significantly improving the speed of other tools. In one case I improved the speed of a critical-path task by a factor of 4, where in many situations this task was the slowest part of a design iteration.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

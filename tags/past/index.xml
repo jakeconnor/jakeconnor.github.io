@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Past on Jake Connor</title>
+    <link>https://jakeconnor.github.io/tags/past/index.xml</link>
+    <description>Recent content in Past on Jake Connor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/past/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Antennas for Satellites and Space Probes</title>
+      <link>https://jakeconnor.github.io/project/MDA-Antennas/</link>
+      <pubDate>Fri, 07 Apr 2017 01:02:01 -0400</pubDate>
+      
+      <guid>https://jakeconnor.github.io/project/MDA-Antennas/</guid>
+      <description>&lt;p&gt;I spent a year working at MDA Satellite Systems, in Montreal, designing antennas for various spacecraft.&lt;/p&gt;
+
+&lt;p&gt;My primary focus was on communications-oriented satellites, with demanding specifications and tight uncertainty budgets. I worked on projects from the early proposal stage, through (successful) contract negotiations, and through the program phase to final testing and shipping.&lt;/p&gt;
+
+&lt;p&gt;I spent significant time on Hylas-4 (pictured above), a High Throughput Satellite with 66 Ka-band user beams divided over 4 reflectors on 2 pallets. As part of the team I worked to develop RF mitigations for mechanical issues, determine assembly tolerances, and produced reports and presentations.&lt;/p&gt;
+
+&lt;p&gt;I additionally developed a series of tools used to automatically perform tolerance sensitivity analyses on general spacecraft, and produced simple reporting data on performance effects.
+I additionally produces a specialized version of the tool for steerable antennas, that automatically determined the steering compensation that would best mitigate misalignments, and extract performance metrics from the re-steered antenna. As well as being useful on any steerable antenna project, this tool was used to justify selection of cheaper manufacturing techniques on a large-quantity project.&lt;/p&gt;
+
+&lt;p&gt;Finally I worked on a series of internal tools, integrating functionality from many tools into fewer (minimizing engineering time running many programs), automating common tasks, and significantly improving the speed of other tools. In one case I improved the speed of a critical-path task by a factor of 4, where in many situations this task was the slowest part of a design iteration.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
