@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Current on Jake Connor</title>
+    <link>https://jakeconnor.github.io/tags/current/index.xml</link>
+    <description>Recent content in Current on Jake Connor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/tags/current/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Carleton Planetary Robotics Team</title>
+      <link>https://jakeconnor.github.io/project/cprt/</link>
+      <pubDate>Sun, 07 May 2017 00:29:25 -0400</pubDate>
+      
+      <guid>https://jakeconnor.github.io/project/cprt/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://cprt.wordpress.com&#34; target=&#34;_blank&#34;&gt;Carleton Planetary Robotics Team&lt;/a&gt; is entering its 4th year, and I’m proud to have been a member since its founding. The team’s primary goal is to build rovers for fun, and to compete at competitions like the University Rover Challenge, UK University Rover Challenge, and European Rover Challenge.&lt;/p&gt;
+
+&lt;p&gt;We have had a couple false starts over the years, but this year succeeded in building a rover, and bringing it with us to Manchester UK, where we competed against teams from UK, India, Bangladesh, Egypt, and Poland. We were very impressed with the rover’s performance, and are looking forward to iterating on the design this year, and making many improvements.&lt;/p&gt;
+
+&lt;p&gt;It’s difficult to get any new major project off the ground, and this team was no exception. In our first year we were designing for NASA’s Robotic Mining Challenge, but at the end of that year the competition changed its rules to prevent non-US teams from competing. We spent the following year in a state of limbo, hesitant to throw away the good work we’d done, but with little drive to move forward in the rover’s development. We continued working and learning, but did not physically build our design.
+Last September, the team set our sights on the rover challenge series, intending to design a new rover from the ground up to compete this summer. We worked hard, and were able to make it in time for the UKURC, in July.
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/cleared-it.jpg&#34; alt=&#34;H3 Clears a Series of Rocks at the UKRC2016&#34; /&gt;
+    
+    
+    &lt;caption&gt;
+        &lt;p&gt;
+        H3 Clears a Series of Rocks at the UKRC2016
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/caption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;This year I will return to my position as an electronics lead, after taking a year off while working out of town. The first goal of the electronics team this year will be to improve the assembly process for the rover, with better cable routing, cable color coding, and the use of latching connectors wherever possible. The last item there was spurred by an incident at the competition, where after carrying our rover from the hotel to the competition, a motor wire had come loose in a way that we couldn’t see with simple visual inspection. We will also be improving the testability of the internal electronics. We will achieve this by adjusting layout to make components easier to probe (in one late-night lab session my unsteady probe hand shorted a power module and fried it, requiring it be swapped with a spare), and exposing test points for components that aren’t easily probed. And since the team now has a completed rover, we will be running regular operation scenarios, which will open our eyes to more subtle problems and areas for improvement.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/N2haM_vvAiQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;p&gt;While my primary responsibility is in leadership of the electronics team, I have also been able to contribute from a design perspective:&lt;/p&gt;
+
+&lt;p&gt;I developed the power architecture for the rover, including custom PCBs, and the assembly/testing/calibration procedures.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The fully functional power system can power on and off individual subsystems as necessary, and track the power usage and regulation efficiency at the regulator level. The system can scale to over 100 independent regulators, but presently uses 6 for simplicity and due to mass constraints.&lt;/li&gt;
+&lt;li&gt;A personal goal next year is to separate the control and monitoring from the regulation, which will simplify the rover software and reduce the mass required per subsystem, which will allow greater granularity of control over the onboard power. I would also like to automate the calibration procedure, in tandem with the software team.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I also developed the rover communications link budget and hardware implementation. The rover uses 2.4GHz Wi-Fi for compliance to all competition rules and has 2 configurations.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The short-range configuration is designed for a 250m range, and uses unsteered antennas. We can achieve a 54Mbps or better link at full range and when the rover is tilted by up to 45 degrees of pitch and roll, and any yaw. The 54Mbps is sufficient to fully control the rover while receiving visual feedback from 3 high-resolution cameras, or more cameras at reduced resolution.&lt;/li&gt;
+&lt;li&gt;The longer range configuration adds a steerable high-gain antenna at the base station, and can support the above link up to 2.5km. The steering is done automatically using GPS feedback from the rover itself, and the rover is programmed to remember recent zones of good signal, and return to them.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/the-claw.jpg&#34; alt=&#34;The Claaaaaaaaaaaaaaw&#34; /&gt;
+    
+    
+    &lt;caption&gt;
+        &lt;p&gt;
+        The Claaaaaaaaaaaaaaw
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/caption&gt;
+    
+&lt;/figure&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

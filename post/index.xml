@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Jake Connor</title>
+    <link>https://jakeconnor.github.io/post/index.xml</link>
+    <description>Recent content in Posts on Jake Connor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>260A relay</title>
+      <link>https://jakeconnor.github.io/post/260A-relay/</link>
+      <pubDate>Wed, 22 Mar 2017 00:39:43 -0400</pubDate>
+      
+      <guid>https://jakeconnor.github.io/post/260A-relay/</guid>
+      <description>&lt;p&gt;One of the fun things about being on a rover team is it gives me an opportunity to play with hardware far out of what I&amp;rsquo;d normally encounter. Much of that falls in the category of power, as we design for about a kW of draw running on 12V (for now).&lt;/p&gt;
+
+&lt;p&gt;A feature of our emergency stop system is a pair of &lt;a href=&#34;http://www.mouser.com/ds/2/418/NG_DS_V23130-X0000-A001_0612-844233.pdf&#34; target=&#34;_blank&#34;&gt;260A automotive relays&lt;/a&gt;, which I recently fried. While disappointed to have ruined a rather expensive relay, I was excited to take it apart. Pictures below, and after that an explanation of what went wrong.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/relay/top.jpg&#34; alt=&#34;My Tool of Choice&#34; /&gt;
+    
+    
+    &lt;caption&gt;
+        &lt;p&gt;
+        My Tool of Choice
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/caption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/relay/top2.jpg&#34; alt=&#34;Top Off. Lots of Copper Here&#34; /&gt;
+    
+    
+    &lt;caption&gt;
+        &lt;p&gt;
+        Top Off. Lots of Copper Here
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/caption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/relay/side.jpg&#34; alt=&#34;Sides off. The far left copper is actuated by the coil, and the top metal acts as the spring. It&amp;#39;s bistable, so the copper stays where you left it after removing coil voltage&#34; /&gt;
+    
+    
+    &lt;caption&gt;
+        &lt;p&gt;
+        Sides off. The far left copper is actuated by the coil, and the top metal acts as the spring. It&amp;#39;s bistable, so the copper stays where you left it after removing coil voltage
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/caption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/relay/back.jpg&#34; alt=&#34;The back, with contacts. Note the copper core in the coil. Did I mention it takes 3 amps to switch?&#34; /&gt;
+    
+    
+    &lt;caption&gt;
+        &lt;p&gt;
+        The back, with contacts. Note the copper core in the coil. Did I mention it takes 3 amps to switch?
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/caption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;So, what went wrong?
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/relay/schem.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+
+Well, see those reverse protection diodes? Wired power up backwards. Rover batteries were happy to pump some 200A through them. The fix? A couple new diodes.
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/relay/the-fix.jpg&#34; alt=&#34;Well that was easy.&#34; /&gt;
+    
+    
+    &lt;caption&gt;
+        &lt;p&gt;
+        Well that was easy.
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/caption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PCB Bottle Opener</title>
+      <link>https://jakeconnor.github.io/post/PCB-Opener/</link>
+      <pubDate>Wed, 04 Jan 2017 00:39:59 -0400</pubDate>
+      
+      <guid>https://jakeconnor.github.io/post/PCB-Opener/</guid>
+      <description>&lt;p&gt;So as far as I can tell, there have only been two written about attempts at making a bottle opener from a PCB, which to me is far too low a number.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=nrahtW_ET8o&#34; target=&#34;_blank&#34;&gt;Brian Benchoff&lt;/a&gt; cleverly inserted a notch into an arduino board, though found that the design wasn&amp;rsquo;t very durable.&lt;/p&gt;
+
+&lt;p&gt;And &lt;a href=&#34;https://www.youtube.com/watch?v=YuPBHMznZMI&#34; target=&#34;_blank&#34;&gt;Low Voltage Labs&lt;/a&gt; came up with a more standard opener, but in a very small form. I couldn&amp;rsquo;t find any mention of the opener on their website though, and wanted one of my own, so set out to create it from scratch.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/opener/rev1.jpg&#34; alt=&#34;First Opener Revision&#34; /&gt;
+    
+    
+    &lt;caption&gt;
+        &lt;p&gt;
+        First Opener Revision
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/caption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Because I like space, and thought they would tie into my &lt;a href=&#34;https://cprt.wordpress.com/&#34; target=&#34;_blank&#34;&gt;rover team&lt;/a&gt;, I went with a rocket ship layout, and silkscreened the team&amp;rsquo;s information on the front. After modifying to include 2 per panel, we&amp;rsquo;re able to get 20 openers from Seeed Fusion for $10USD.&lt;/p&gt;
+
+&lt;p&gt;There were certainly some concerns about strength of the FR4, but after a suitable test campaign we are satisfied with the results.&lt;/p&gt;
+
+&lt;p&gt;There is some noticeable wear on the edge that hooks under the bottle cap, which may be mitigated by including copper and a pad at that location, and the horizontal size of the hole is a little too large. It should probably be shortened a couple mm to get firm contact with the bottle cap for leverage.&lt;/p&gt;
+
+&lt;p&gt;The design is open, and available on &lt;a href=&#34;https://circuitmaker.com/Projects/Details/Jake-Connor/CPRT-Opener&#34; target=&#34;_blank&#34;&gt;Circuitmaker&lt;/a&gt; (which is lacking in handy layout features like mirrors, trims, arrays, and such) for anyone to fork and make.&lt;/p&gt;
+
+&lt;p&gt;Next steps are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;del&gt;Make it a little less flimsy by adjusting the hole size (probably making the ship bigger)&lt;/del&gt; Rev 2!&lt;/li&gt;
+&lt;li&gt;Integrate a sensor to light an LED when a bottle is being opened&lt;/li&gt;
+&lt;li&gt;Add a low power uC so the opener can count how many bottles it will open&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/opener/new.jpg&#34; alt=&#34;Revision 2: Now With More Shiny&#34; /&gt;
+    
+    
+    &lt;caption&gt;
+        &lt;p&gt;
+        Revision 2: Now With More Shiny
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/caption&gt;
+    
+&lt;/figure&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Shor&#39;s Algorithm, with Julia Examples</title>
+      <link>https://jakeconnor.github.io/post/Shors/</link>
+      <pubDate>Fri, 01 May 2015 00:40:14 -0400</pubDate>
+      
+      <guid>https://jakeconnor.github.io/post/Shors/</guid>
+      <description>&lt;p&gt;One of the often touted examples of the power of quantum computers is their ability to run Shor&amp;rsquo;s Algorithm, which is a way to quickly find the prime factors of a number, and hence defeat many of the encryption schemes used today.&lt;/p&gt;
+
+&lt;p&gt;There are many good explanations of how Shor&amp;rsquo;s algorithm works, like this &lt;a href=&#34;http://blogs.ams.org/mathgradblog/2014/04/30/shors-algorithm-breaking-rsa-encryption/#sthash.59iEnvXz.dHjm4gpG.dpbs&#34; target=&#34;_blank&#34;&gt;more conceptual overview&lt;/a&gt;, this more &lt;a href=&#34;http://tph.tuwien.ac.at/~oemer/doc/quprog/node18.html&#34; target=&#34;_blank&#34;&gt;mathematical explainer&lt;/a&gt;, or &lt;a href=&#34;http://arxiv.org/pdf/quant-ph/0303175v1.pdf&#34; target=&#34;_blank&#34;&gt;this article&lt;/a&gt; which not only explains the algorithm, but also the fundamentals of how a quantum computer operates. I&amp;rsquo;m not going to re-explain the algorithm, but instead I&amp;rsquo;m going to walk through an example, and hopefully give some insight into what the q-bits are doing.&lt;/p&gt;
+
+&lt;p&gt;The code in this post is written in &lt;a href=&#34;http://julialang.org/&#34; target=&#34;_blank&#34;&gt;Julia&lt;/a&gt;, and using the &lt;a href=&#34;https://github.com/dcjones/Gadfly.jl&#34; target=&#34;_blank&#34;&gt;Gadfly&lt;/a&gt; package for visualizations.&lt;/p&gt;
+
+&lt;p&gt;If you want to play along, you can install Julia, or you can head over to tmpnb and create a new Julia notebook (I wrote this while using version 0.3.2). If you&amp;rsquo;ve installed Julia on your own, make sure you install Gadfly using&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;Pkg.add(&amp;quot;Gadfly&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then make sure you&amp;rsquo;re using Gadly in your session with&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;using Gadfly
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And now we&amp;rsquo;re ready to walk through Shor&amp;rsquo;s algorithm.&lt;/p&gt;
+
+&lt;p&gt;We start by picking what number to factor. For speed and simplicity I&amp;rsquo;m going to choose $m=21 = 7 * 3$. We pick a number $r$, and we will find the order of $r$ in the modular group of $m$, which is 21 for us. I&amp;rsquo;m going to pick $r=2$, but any number that isn&amp;rsquo;t already a factor of $m$ will work. (And if you&amp;rsquo;ve picked a factor of $m$ congratulations, you just factored your number!). Setting these variable in Julia (I will be using &amp;gt;&amp;gt; to show the results of these commands).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;m = 7*3
+r = 2
+m,r, gcd(m,r)
+&amp;gt;&amp;gt; 21,2,1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next we need to prepare our set of qubits. Just how many we need depends on a couple of things, how large our number $m$ is, and how accurate we want our answer to be. We will have a pair of registers, whose sizes we need to decide on.&lt;/p&gt;
+
+&lt;p&gt;We are going to calculate $r^a \mod m$ for many values of a, and the first register will contain our values of a. The larger this register is, the more accurate results we will get from our Fourier transform later.&lt;/p&gt;
+
+&lt;p&gt;The second register contains the results of the above calculation. Since the result will never be larger than $m$ we need at least $\log_2 m$ bits to store those numbers. so we set&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;mbits = convert(Int,ceil(log2(m)))
+&amp;gt;&amp;gt; 5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The size of the first register is still up for debate, but I&amp;rsquo;ll just make it 5 bits larger than the second register.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;auxbits = mbits+5
+&amp;gt;&amp;gt; 10
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now we&amp;rsquo;re going to represent our qubits with a matrix, the value of the first register will be the index along the rows, and the value of the second register along the columns. This decision is entirely arbitrary, you can think of the qubit as a long list of cells, or a matrix of any shape, or even more abstract ideas. Since our 5-bit register is capable of holding values up to $2^5$, we have that many columns, and the same goes for the 10-bit register.&lt;/p&gt;
+
+&lt;p&gt;We start by initializing the matrix, note that we&amp;rsquo;re planning on putting complex numbers in it.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;qbit = zeros(Complex,2^auxbits,2^mbits)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This produces a 2-dimensional matrix, 1024 rows by 32 columns. Since every bit we add to $m$ doubles the size of this matrix, you can imagine why it&amp;rsquo;s not feasible to use this technique to simulate Shor&amp;rsquo;s algorithm on large numbers.&lt;/p&gt;
+
+&lt;p&gt;Next up it&amp;rsquo;s time to run the actual calculation for  $r^a \mod m$ on our qubit system.&lt;/p&gt;
+
+&lt;p&gt;For $a=1$ we find $2^1 \mod 21$ is 2, so we put a number in the 2nd column of the first row. We do this for each row, and eventually fill in the matrix. However the question is, what number do we put? Since we need to preserve normalization (the sum of the square norms of the elements should add up to 1) we pick $\frac{1}{\sqrt{2^{10}}}$. So we can now run this operation, and take a look at the state of the matrix using spy (reminder, the blue cells are those that have a non-zero probability of being measured).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;[qbit[nn,powermod(r,nn,m)]= 1/sqrt(2^auxbits) for nn=1:(2^auxbits)]
+spy(qbit)
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/shors/a1.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;We can already see that the results are all arranged in a small number of columns, and if we zoom into the first 50 rows&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;spy(qbit[1:50,:])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;we start to see the pattern.
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/shors/a2.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s much more clear here that the non-zero values are following a simple repeating pattern. In a perfect world we could just count off the period and use it in further calculations, but since we&amp;rsquo;re using a quantum computer we can only measure one of those cells, and not all of them. By taking the Fourier transform along the columns however, our qubit will then contain the period(s) of the function.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s where many people (including us) will diverge from the original Shor&amp;rsquo;s algorithm. While it is feasible to take the quantum Fourier transform of this entire system, it is much faster (and no less accurate) to measure the second register (along the columns). By making this measurement, we will then have only one column of non-zero values, which makes for a much faster Fourier transform.&lt;/p&gt;
+
+&lt;p&gt;To simulate making a quantum measurement, we start by finding the square norms of each column&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;col_norm2 = sum(abs2(qbit),1)
+plot(x=collect(1:2^mbits), y = col_norm2, Geom.bar)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And taking a look at it, we see
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/shors/a3.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;No surprise here, the columns with values have non-zero probabilities, the rest are non-existent. They have (roughly) the same amplitude in each, which means we&amp;rsquo;re about equally likely to measure any of these columns. We then pick a random number, to get some randomness into our measurement, and compare it to the amplitudes of the columns.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;rmeas = rand()
+loc=0
+for nn=1:2^mbits
+     if rmeas &amp;lt; col_norm2[nn]
+          loc = nn; break;
+     else
+          rmeas -= col_norm2[nn]
+     end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;At this point your results and mine will differ, that&amp;rsquo;s the fun of a random measurement. Don&amp;rsquo;t worry though, we should still end up with the same results.&lt;/p&gt;
+
+&lt;p&gt;Next up we want to take a look at that last column. The first 50 rows look like&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;plot(x=collect(1:100), y = abs(rem_col[1:100]), Geom.bar)
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/shors/a4.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Again, we have a nice evenly distributed set of qubits. Now because we want to find the period of the pattern, we take the Fourier transform, and re-normalize.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;rem_fft=fft(qbit[:,loc])
+rem_fft./=sum(abs(rem_col))
+plot(x=collect([2:2^auxbits]), y = abs(rem_fft[2:2^auxbits]),Geom.bar)
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/shors/a5.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Now we see we have a few large peaks, which we are most likely to measure later on. These are the dominant frequencies in the column we selected, and these are generally integer multiples of the period we&amp;rsquo;re trying to measure. So we make a quantum measurement on our remaining register, and then we can start working on guessing our period.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;loc=0
+for nn=1:2^auxbits
+  if rmeas &amp;lt; abs(rem_col[nn])
+      loc = nn; break;
+  else
+      rmeas -= abs(rem_col[nn])
+  end
+end
+
+c = loc-1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Where $c$ is our measurement of the frequency of the pattern. In a perfect world we could simply flip it to find the period, the period would be a perfect integer, and that would be that. However if you look at the plot above, you can see the peaks have some width, so there&amp;rsquo;s going to be some variance in what we measure.&lt;/p&gt;
+
+&lt;p&gt;What we want to do is scan over a set of integer numbers $z$, and find the $z$ for which the value of $\frac{zc}{2^{10}}$ is closest to an integer. I will claim that the $z$ will be somewhere between $m-3\sqrt{m}$ and $m+1-2\sqrt{m}$. So we calculate the lower and upper bounds of this range, then classically iterate over the integers within using:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;offset = ceil(m-3*sqrt(m))
+diff = floor(m +1 - 2*sqrt(m)) - offset
+dist = zeros(convert(Int,diff+1),1)
+[dist[nn+1] = abs( (nn+offset)*c/2^auxbits - round((nn+offset)*c/2^auxbits)) for nn=0:diff]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And we can grab the index of the result closest to an integer, and account for the offset to give the value $s$, which is the order of $r$, the result we need to find the prime factors of $m$.&lt;/p&gt;
+
+&lt;p&gt;There are a handful of methods to find the powers now, but the simplest conceptually is to find the gcd of s and m.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;s = indmin(dist) + offset -1
+agcd=gcd(convert(Int,s),m)
+s,agcd , m/agcd
+(9.0,3,7.0)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And we can see that 3 and 7 are the  prime roots of 21.&lt;/p&gt;
+
+&lt;p&gt;Now if you&amp;rsquo;re following along, and didn&amp;rsquo;t get the same answer, try running the program again. The probabilistic measurements mean that the algorithm is not guaranteed to find the correct answer every time. Sometimes it might take a couple tries to get the right result, but thankfully the results are easy to check for validity.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using Dual Numbers to Automatically Find the Derivative of a Function</title>
+      <link>https://jakeconnor.github.io/post/Dual-Numbers/</link>
+      <pubDate>Sat, 13 Dec 2014 00:40:30 -0400</pubDate>
+      
+      <guid>https://jakeconnor.github.io/post/Dual-Numbers/</guid>
+      <description>&lt;p&gt;Imaginary numbers are a powerful mathematical tool, however most people are only really familiar with the commonly used $i=\sqrt{-1}$. This is fair, because $i$ has uses in just about any technical field you can name, but there are others which have their own uses.&lt;/p&gt;
+
+&lt;p&gt;The dual numbers work by a definition similar to the complex numbers that $x = a + b\varepsilon$, where $\varepsilon$ is an imaginary number such that $\varepsilon^2=0$, but $\varepsilon \ne 0$&lt;/p&gt;
+
+&lt;p&gt;The usefulness of dual numbers appears when you consider the Taylor series expansion for a general function using $a+b\varepsilon$.&lt;/p&gt;
+
+&lt;p&gt;$f(a+b\varepsilon)=\sum_{n=0}^\infty \frac{f^{(n)}(a)b^n\varepsilon^n}{n!} = f(a)+bf^{&amp;lsquo;}(a)\varepsilon$&lt;/p&gt;
+
+&lt;p&gt;Where higher order terms of $\varepsilon$ drop off because $\varepsilon^2 = 0$.&lt;/p&gt;
+
+&lt;p&gt;In programming, we can take advantage of this to retrieve both the value of a function and it&amp;rsquo;s derivative, even in cases where we don&amp;rsquo;t know the derivative, or even when the function is a black box.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s an example using Julia and the package DualNumbers, but similar packages exist for most common languages. The code below is a simple implementation of Newton&amp;rsquo;s method for root finding, which is a good use because it allows us to use both the function value and its derivative from each function evaluation. (Note that each function evaluation will require more operations than we would by evaluating with a purely real number. This is because adding and subtracting require 2 operations each, and multiplication and division many more).&lt;/p&gt;
+
+&lt;p&gt;We start by defining the function under test in line 3, for this example it&amp;rsquo;s a simple quadratic, but it certainly doesn&amp;rsquo;t need to be. Line 4 defines our dual number, this syntax lets us set $x=5+1\varepsilon$. We then evaluate the function at x, and store this in y. The variable y now contains a dual number of the form $y=a+b\varepsilon$, where $a=f(5)$ and $b=\varepsilon\frac{d}{dx}f(5)$.&lt;/p&gt;
+
+&lt;p&gt;The actual work of netwons method is in line 10, where we set&lt;/p&gt;
+
+&lt;p&gt;$x^{*} = x - \frac{f(x)}{f^{&amp;lsquo;}(x)}$&lt;/p&gt;
+
+&lt;p&gt;We use&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;real(y)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to retrieve the value of the function at x, and then&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;epsilon(y)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to find the derivative. We then find the new value of y, and continue refining x until converges. The results are shown below the code.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;using DualNumbers
+
+f(x) = x^2 - 2
+x = dual(5,1);
+y=f(x)
+
+@printf &amp;quot;\n\n%8s %12s %12s\n&amp;quot; &amp;quot;x&amp;quot; &amp;quot;y&amp;quot; &amp;quot;dy/dx&amp;quot;
+
+while abs(real(y)) &amp;gt; 1e-8
+     x = x - real(y)/epsilon(y)
+     y = f(x)
+     @printf &amp;quot;%8f %8e %8e\n&amp;quot; real(x) real(y) epsilon(y)
+end
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;
+       x              y          dy/dx
+5.000000   2.300000e+01   1.000000e+01
+2.700000   5.290000e+00   5.400000e+00
+1.720370   9.596742e-01   3.440741e+00
+1.441455   7.779358e-02   2.882911e+00
+1.414471   7.281571e-04   2.828942e+00
+1.414214   6.625248e-08   2.828427e+00
+1.414214   4.440892e-16   2.828427e+00
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s worth noting that things don&amp;rsquo;t to end here. By implementing your vectors using dual numbers rather than reals, you can easily compute gradients of multidimensional functions, or even the Jacobian of a vector-valued function.&lt;/p&gt;
+
+&lt;p&gt;If you want to retrieve the second derivative of a function as well (perhaps to implement Halley&amp;rsquo;s Method), you can use Hyper-Dual numbers, which simply add another different $\varepsilon$, and have an associated Julia Package.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Adventures in Windows Parity Storage Spaces</title>
+      <link>https://jakeconnor.github.io/post/Parity-Spaces/</link>
+      <pubDate>Tue, 14 Jan 2014 00:40:46 -0400</pubDate>
+      
+      <guid>https://jakeconnor.github.io/post/Parity-Spaces/</guid>
+      <description>&lt;p&gt;Lately as my collection of storage has grown I&amp;rsquo;ve found myself more and more in need of having some system in place, instead of a number of different hard drives which each may or may not contain something I&amp;rsquo;m looking for. I don&amp;rsquo;t have the resources to buy a number of identical drives to implement RAID, or to set up a second computer with an operating system that supports ZFS just for storage. If I really want to implement a system, it&amp;rsquo;s going to be in Windows Storage Spaces, using the parity space.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;September 2016 Update&lt;/strong&gt;: After a couple years, a single bad drive cost me a parity space, and even Microsoft&amp;rsquo;s advanced tech support isn&amp;rsquo;t helpful on the issue. Seeing as the parity space should have been resilient to the single failure, I&amp;rsquo;ve moved on from the system, and wouldn&amp;rsquo;t recommend you use it. My post does remain below for reference however.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Lately as my collection of storage has grown I&amp;rsquo;ve found myself more and more in need of having some system in place, instead of a number of different hard drives which each may or may not contain something I&amp;rsquo;m looking for. I don&amp;rsquo;t have the resources to buy a number of identical drives to implement RAID, or to set up a second computer with an operating system that supports ZFS just for storage. If I really want to implement a system, it&amp;rsquo;s going to be in Windows Storage Spaces, using the parity space.&lt;/p&gt;
+
+&lt;p&gt;Being cautious, I started googling for how storage spaces would work in the long term, and how these workings would fit my time and financial resources.&lt;/p&gt;
+
+&lt;p&gt;Questions like,
+How will the array handle it if I expand?
+Can I add another drive, or am I restricted to swapping old ones out?
+How fast will the pool be?
+What happens when a drive fails?
+Do I have to replace a failed drive?
+and finally, Why don&amp;rsquo;t people like this?&lt;/p&gt;
+
+&lt;p&gt;But the internet wasn&amp;rsquo;t of much help. Searching around will yield lots of confusion, complaints, and a few people who implemented very specific test cases in virtual machines to see how things worked. By making a couple assumptions, and a list of things I&amp;rsquo;d need to do if I lose my data, I set out to see how storage spaces work for me, and document it online.&lt;/p&gt;
+
+&lt;p&gt;After a few days of testing, my experiences can be summarized in a few quick lessons, with details and explanations following.&lt;/p&gt;
+
+&lt;p&gt;Lesson 1: Parity spaces are not as efficient as RAID5
+Lesson 2: Parity spaces are slow
+Lesson 3: Repairing arrays is quirky
+Lesson 4: Removing drives is okay
+Lesson 5: Rebuilds are slow
+Lesson 6: You can replace a drive with itself&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;December 2015 Update&lt;/strong&gt;: In a recent update to windows 10, Microsoft has added the ability to optimize the distribution of data across drives. This negates the need to remove and reinsert a drive to force something resembling a rebalance.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Also added is the ability to prepare a drive for removal: rather than pulling a drive and then repairing the space,  windows will now copy over all the data from that drive before you pull it. Because the option only shows up for drives that can be safely removed, it&amp;rsquo;s also a decent indicator of whether you&amp;rsquo;re over- or under-provisioned. this is much simpler than using an excel spreadsheet to figure out how to properly expand your storage.&lt;/p&gt;
+
+&lt;p&gt;These features are only available in windows 10, and older computers will no longer be able to recognize the space.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1: Taking inventory&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;At the start of this project, I have 6 hard drives, of varying sizes, brands, and types. Not ideal, but I&amp;rsquo;m not picky. Listing out what I have leads to:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;One 3TB WD Red&lt;/li&gt;
+&lt;li&gt;One 2.5TB WD Green&lt;/li&gt;
+&lt;li&gt;One 2TB WD Green&lt;/li&gt;
+&lt;li&gt;One 500GB WD Black&lt;/li&gt;
+&lt;li&gt;One 3TB Seagate&lt;/li&gt;
+&lt;li&gt;One 750GB Seagate&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;From my searching I know that starting with 3 drives then adding more gets messy, since the drive will be unbalanced and storage spaces can not be rebalanced. So I move as much data as possible to external drives, and end up needing one of the 3TB drives from above as well to hold the data while I migrate the rest.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2: Getting Started&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I pool the remaining drives together, and get about 8.5TB of space to work with. I create a parity space using all the pool, which means I can store about 6TB of data.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Lesson 1: Parity Spaces vs RAID5&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;When describing the parity storage space, it&amp;rsquo;s most often compared to RAID5, in that if you lose a disk, you don&amp;rsquo;t lose any data. While this is true, there are some major differences in how this is managed. In a RAID5 array, all the drives must be the same size, and your pool can have N drives as long as N is 3 or more. The data is evenly distributed across all N disks, in such a way that if one disk fails, the data can be rebuilt. This means that you get the storage capacity of (N-1) disks. For a 3-disk array this means 66% of available capacity, but for a 10 disk array you get 90%. The more disks you add, the less space is wasted.&lt;/p&gt;
+
+&lt;p&gt;Parity spaces do not work like that in the slightest. No matter how many drives you have, any one piece of data exists on only 3 drives. This means you get 66% of your total storage space no matter if you have 3 drives or 300. I have to imagine it wouldn&amp;rsquo;t have been hard to create an algorithm that puts data on as many disks as possible to save space, but this might have hurt another feature we encounter down the road.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Back to my own parity space. I have 3TB of data, ready to slot into a 6TB space. I&amp;rsquo;m hesitant, so I make a few small transfers (10-500GB) and monitor the progress.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Lesson 2: Parity Spaces Are Slow&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Throughout all the transfers, moving terabytes of data, the drives managed about 10MB/s. These drives are capable of, at a minimum 50MB/s, and really much more since the data is being striped. But the parity calculations are hard, are CPU intensive, and are actually the bottleneck here. If speed is important, use a two-way mirror where the only bottleneck are your drives and the controller. you&amp;rsquo;ll lose space, but get the full performance out of your drives.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The same volume, in bytes of data is being written to each disk. I would have expected it to write proportionate amounts to each disk based on that disks size. So where I expected to see, say 5% of each disk used and varying amounts, I see 100GB of each disk used, with percentage used ranging from 3% to 13%.&lt;/p&gt;
+
+&lt;p&gt;However, I&amp;rsquo;m not seeing any more space being used than expected, having written 300GB to the space I have about 450GB of raw space used, so it&amp;rsquo;s roughly what I expected. I keep on copying data over.&lt;/p&gt;
+
+&lt;p&gt;As I put about 2TB of data on the pool, it seems the data is being spread out more proportionally. My large (&amp;gt;1 TB) drives still have roughly the same amount of data, at 800GB each, but the 750GB drive has 500GB of data, and the 500GB drive has 355GB of data. Interesting fact, there.&lt;/p&gt;
+
+&lt;p&gt;At roughly this time, I notice that my system drive is acting weird, I start to worry that it&amp;rsquo;s dying. I decide I&amp;rsquo;m not buying another drive, so I decide I&amp;rsquo;m going to pull the 500GB drive from the pool, use it to clone my system drive, and allow the 3TB seagate to take its place in the pool.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3: Replacing A Drive&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This should be easy, right? I pull the 500GB drive, and open up my storage spaces panel. The array is in a degraded state, but all my data is there and accessible. I have two options at this point, remove the 500GB from the pool, or add the 3TB drive. I click the button that removes the 500GB from the pool, and windows immediately allocates space on the other drives to take the load. I frantically added the 3TB to the pool, but it was too late. It was to be left with no data on it.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Lesson 3: Repairing arrays is quirky&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;As soon as you tell windows to remove a drive, it will decide where it&amp;rsquo;s going to put the data from the repair process and begin repairing. Any changes made to the pool after that click has no effect.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 4: Removing drives&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;If you have 4 or more drives in a pool in parity configuration, and choose to remove one, you can repair the array to the remaining drives without having to add another drive. This is useful when you don&amp;rsquo;t want to buy another drive just yet. (This is what I was referring to with lesson 1, distributing data evenly across all the drives would have made this process more difficult to implement.)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So that one&amp;rsquo;s on me. I don&amp;rsquo;t like the design, but I didn&amp;rsquo;t know how the space worked, and I got bit. I&amp;rsquo;ll take that one, and I&amp;rsquo;ve got an idea at this point anyways. I let the space rebuild, it takes about 12 hours to rebuild the 350GB of data that was lost. Remember Lesson 2?&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;December 2015 Update:&lt;/strong&gt; Now added is the ability to prepare a drive for removal: rather than pulling a drive and then repairing the space,  windows will now copy over all the data from that drive before you pull it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Lesson 5: Rebuilds Are Slow&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This is true even in a hardware RAID5 configuration, but you really feel it when your processor is trying to crunch the parity data to rebuild. Expect this to be a long process.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So the rebuild is done, and all my data is inside the storage space. Success? Not yet. Time to poke in at the distribution of data. After the rebuild the distribution of raw data is as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;3TB WD Red: 950GB&lt;/li&gt;
+&lt;li&gt;2.5TB WD Green: 950GB&lt;/li&gt;
+&lt;li&gt;2TB WD Green: 950GB&lt;/li&gt;
+&lt;li&gt;3TB Seagate: 0GB&lt;/li&gt;
+&lt;li&gt;750GB Seagate: 530GB&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I&amp;rsquo;m not a fan of this. While I could totally let it go, and trust windows to balance things out over time, I&amp;rsquo;ve got an idea. And I want to test my idea. So I pull up EASEUS partition manager (windows will absolutely not let me see the disks as individuals without removing them from the pool) and empty the 750GB seagate.&lt;/p&gt;
+
+&lt;p&gt;My storage spaces panel turns yellow, the array is in a degraded state. Perfect. I can now remove the 750GB drive from the pool, and redistribute its data to the other drives, or I can add a drive. I click on add drives, and the 750GB Seagate is listed there. I click add drive, wait a minute, and get a file access error. So I reboot my PC, and head into the storage spaces panel, and successfully add the drive to the array.&lt;/p&gt;
+
+&lt;p&gt;At this point there are now two listings of my 750GB Seagate in the pool, one in it&amp;rsquo;s empty, ready to receive data state, and one listed as &amp;ldquo;disconnected&amp;rdquo;, with windows letting me know how much data it was holding. I remove the &amp;ldquo;disconnected&amp;rdquo; drive from the parity, and windows initiates the rebuild, allocating space on my drives like so:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;3TB WD Red: 1TB&lt;/li&gt;
+&lt;li&gt;2.5TB WD Green: 1TB&lt;/li&gt;
+&lt;li&gt;2TB WD Green: 1TB&lt;/li&gt;
+&lt;li&gt;3TB Seagate: 120GB&lt;/li&gt;
+&lt;li&gt;750GB Seagate: 120GB&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Okay, so this isn&amp;rsquo;t much better. But it has taught me something.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Lesson 6: You Can Replace A Drive With Itself&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Yeah, this is crazy. But, by pulling a drive and replacing it with itself, the data on the drive was distributed to the entire pool (including itself) just as new data normally would be. This means you can force a bit of a rebalance by pulling a drive and replacing it with itself.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I&amp;rsquo;d really like to see the results of me running this process with my 3 large drives, however I don&amp;rsquo;t want to spend a week rebuilding the space just for some experimental data. I expect I&amp;rsquo;d end up with the most data on the drive you first refreshed, with less and least from the 2nd and 3rd drives, with lots of data on the 3TB Seagate which is currently almost empty. The 750GB drive would probably have roughly the same 500GB as previous, maybe a little more, however storage spaces seemed to stray from loading the drive up too far.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;December 2015 Update:&lt;/strong&gt; In a recent update to windows 10, Microsoft has added the ability to optimize the distribution of data across drives. This negates the need to remove and reinsert a drive to force something resembling a rebalance.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

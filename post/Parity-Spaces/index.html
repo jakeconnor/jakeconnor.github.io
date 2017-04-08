@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.19" />
+  <meta name="author" content="Jake Connor">
+  
+
+  
+  
+  
+    
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/highlight.min.css">
+    
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/academicons.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
+  <link rel="stylesheet" href="/css/hugo-academic.css">
+  
+
+  <link rel="alternate" href="https://jakeconnor.github.io/index.xml" type="application/rss+xml" title="Jake Connor">
+  <link rel="feed" href="https://jakeconnor.github.io/index.xml" type="application/rss+xml" title="Jake Connor">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="https://jakeconnor.github.io/post/Parity-Spaces/">
+
+  
+
+  <title>Adventures in Windows Parity Storage Spaces | Jake Connor</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Jake Connor</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Home</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#projects">
+            
+            <span>Projects</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Posts</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+          </a>
+        </li>
+
+        
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+  <div class="article-header">
+    <img src="/img//space.PNG" class="article-banner" itemprop="image">
+    
+  </div>
+  
+
+  <div class="article-container">
+    <h1 itemprop="name">Adventures in Windows Parity Storage Spaces</h1>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2014-01-14 00:40:46 -0400 -0400" itemprop="datePublished">
+      Tue, Jan 14, 2014
+    </time>
+  </span>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fjakeconnor.github.io%2fpost%2fParity-Spaces%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Adventures%20in%20Windows%20Parity%20Storage%20Spaces&amp;url=https%3a%2f%2fjakeconnor.github.io%2fpost%2fParity-Spaces%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fjakeconnor.github.io%2fpost%2fParity-Spaces%2f&amp;title=Adventures%20in%20Windows%20Parity%20Storage%20Spaces"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fjakeconnor.github.io%2fpost%2fParity-Spaces%2f&amp;title=Adventures%20in%20Windows%20Parity%20Storage%20Spaces"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Adventures%20in%20Windows%20Parity%20Storage%20Spaces&amp;body=https%3a%2f%2fjakeconnor.github.io%2fpost%2fParity-Spaces%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    <div class="article-style" itemprop="articleBody">
+      <p>Lately as my collection of storage has grown I&rsquo;ve found myself more and more in need of having some system in place, instead of a number of different hard drives which each may or may not contain something I&rsquo;m looking for. I don&rsquo;t have the resources to buy a number of identical drives to implement RAID, or to set up a second computer with an operating system that supports ZFS just for storage. If I really want to implement a system, it&rsquo;s going to be in Windows Storage Spaces, using the parity space.</p>
+
+<hr />
+
+<p><strong>September 2016 Update</strong>: After a couple years, a single bad drive cost me a parity space, and even Microsoft&rsquo;s advanced tech support isn&rsquo;t helpful on the issue. Seeing as the parity space should have been resilient to the single failure, I&rsquo;ve moved on from the system, and wouldn&rsquo;t recommend you use it. My post does remain below for reference however.</p>
+
+<hr />
+
+<p>Lately as my collection of storage has grown I&rsquo;ve found myself more and more in need of having some system in place, instead of a number of different hard drives which each may or may not contain something I&rsquo;m looking for. I don&rsquo;t have the resources to buy a number of identical drives to implement RAID, or to set up a second computer with an operating system that supports ZFS just for storage. If I really want to implement a system, it&rsquo;s going to be in Windows Storage Spaces, using the parity space.</p>
+
+<p>Being cautious, I started googling for how storage spaces would work in the long term, and how these workings would fit my time and financial resources.</p>
+
+<p>Questions like,
+How will the array handle it if I expand?
+Can I add another drive, or am I restricted to swapping old ones out?
+How fast will the pool be?
+What happens when a drive fails?
+Do I have to replace a failed drive?
+and finally, Why don&rsquo;t people like this?</p>
+
+<p>But the internet wasn&rsquo;t of much help. Searching around will yield lots of confusion, complaints, and a few people who implemented very specific test cases in virtual machines to see how things worked. By making a couple assumptions, and a list of things I&rsquo;d need to do if I lose my data, I set out to see how storage spaces work for me, and document it online.</p>
+
+<p>After a few days of testing, my experiences can be summarized in a few quick lessons, with details and explanations following.</p>
+
+<p>Lesson 1: Parity spaces are not as efficient as RAID5
+Lesson 2: Parity spaces are slow
+Lesson 3: Repairing arrays is quirky
+Lesson 4: Removing drives is okay
+Lesson 5: Rebuilds are slow
+Lesson 6: You can replace a drive with itself</p>
+
+<blockquote>
+<p><strong>December 2015 Update</strong>: In a recent update to windows 10, Microsoft has added the ability to optimize the distribution of data across drives. This negates the need to remove and reinsert a drive to force something resembling a rebalance.</p>
+</blockquote>
+
+<p>Also added is the ability to prepare a drive for removal: rather than pulling a drive and then repairing the space,  windows will now copy over all the data from that drive before you pull it. Because the option only shows up for drives that can be safely removed, it&rsquo;s also a decent indicator of whether you&rsquo;re over- or under-provisioned. this is much simpler than using an excel spreadsheet to figure out how to properly expand your storage.</p>
+
+<p>These features are only available in windows 10, and older computers will no longer be able to recognize the space.</p>
+
+<hr />
+
+<p><strong>Step 1: Taking inventory</strong></p>
+
+<p>At the start of this project, I have 6 hard drives, of varying sizes, brands, and types. Not ideal, but I&rsquo;m not picky. Listing out what I have leads to:</p>
+
+<ul>
+<li>One 3TB WD Red</li>
+<li>One 2.5TB WD Green</li>
+<li>One 2TB WD Green</li>
+<li>One 500GB WD Black</li>
+<li>One 3TB Seagate</li>
+<li>One 750GB Seagate</li>
+</ul>
+
+<p>From my searching I know that starting with 3 drives then adding more gets messy, since the drive will be unbalanced and storage spaces can not be rebalanced. So I move as much data as possible to external drives, and end up needing one of the 3TB drives from above as well to hold the data while I migrate the rest.</p>
+
+<p><strong>Step 2: Getting Started</strong></p>
+
+<p>I pool the remaining drives together, and get about 8.5TB of space to work with. I create a parity space using all the pool, which means I can store about 6TB of data.</p>
+
+<blockquote>
+<p><strong>Lesson 1: Parity Spaces vs RAID5</strong></p>
+
+<p>When describing the parity storage space, it&rsquo;s most often compared to RAID5, in that if you lose a disk, you don&rsquo;t lose any data. While this is true, there are some major differences in how this is managed. In a RAID5 array, all the drives must be the same size, and your pool can have N drives as long as N is 3 or more. The data is evenly distributed across all N disks, in such a way that if one disk fails, the data can be rebuilt. This means that you get the storage capacity of (N-1) disks. For a 3-disk array this means 66% of available capacity, but for a 10 disk array you get 90%. The more disks you add, the less space is wasted.</p>
+
+<p>Parity spaces do not work like that in the slightest. No matter how many drives you have, any one piece of data exists on only 3 drives. This means you get 66% of your total storage space no matter if you have 3 drives or 300. I have to imagine it wouldn&rsquo;t have been hard to create an algorithm that puts data on as many disks as possible to save space, but this might have hurt another feature we encounter down the road.</p>
+</blockquote>
+
+<p>Back to my own parity space. I have 3TB of data, ready to slot into a 6TB space. I&rsquo;m hesitant, so I make a few small transfers (10-500GB) and monitor the progress.</p>
+
+<blockquote>
+<p><strong>Lesson 2: Parity Spaces Are Slow</strong></p>
+
+<p>Throughout all the transfers, moving terabytes of data, the drives managed about 10MB/s. These drives are capable of, at a minimum 50MB/s, and really much more since the data is being striped. But the parity calculations are hard, are CPU intensive, and are actually the bottleneck here. If speed is important, use a two-way mirror where the only bottleneck are your drives and the controller. you&rsquo;ll lose space, but get the full performance out of your drives.</p>
+</blockquote>
+
+<p>The same volume, in bytes of data is being written to each disk. I would have expected it to write proportionate amounts to each disk based on that disks size. So where I expected to see, say 5% of each disk used and varying amounts, I see 100GB of each disk used, with percentage used ranging from 3% to 13%.</p>
+
+<p>However, I&rsquo;m not seeing any more space being used than expected, having written 300GB to the space I have about 450GB of raw space used, so it&rsquo;s roughly what I expected. I keep on copying data over.</p>
+
+<p>As I put about 2TB of data on the pool, it seems the data is being spread out more proportionally. My large (&gt;1 TB) drives still have roughly the same amount of data, at 800GB each, but the 750GB drive has 500GB of data, and the 500GB drive has 355GB of data. Interesting fact, there.</p>
+
+<p>At roughly this time, I notice that my system drive is acting weird, I start to worry that it&rsquo;s dying. I decide I&rsquo;m not buying another drive, so I decide I&rsquo;m going to pull the 500GB drive from the pool, use it to clone my system drive, and allow the 3TB seagate to take its place in the pool.</p>
+
+<p><strong>Step 3: Replacing A Drive</strong></p>
+
+<p>This should be easy, right? I pull the 500GB drive, and open up my storage spaces panel. The array is in a degraded state, but all my data is there and accessible. I have two options at this point, remove the 500GB from the pool, or add the 3TB drive. I click the button that removes the 500GB from the pool, and windows immediately allocates space on the other drives to take the load. I frantically added the 3TB to the pool, but it was too late. It was to be left with no data on it.</p>
+
+<blockquote>
+<p><strong>Lesson 3: Repairing arrays is quirky</strong></p>
+
+<p>As soon as you tell windows to remove a drive, it will decide where it&rsquo;s going to put the data from the repair process and begin repairing. Any changes made to the pool after that click has no effect.</p>
+
+<p><strong>Lesson 4: Removing drives</strong></p>
+
+<p>If you have 4 or more drives in a pool in parity configuration, and choose to remove one, you can repair the array to the remaining drives without having to add another drive. This is useful when you don&rsquo;t want to buy another drive just yet. (This is what I was referring to with lesson 1, distributing data evenly across all the drives would have made this process more difficult to implement.)</p>
+</blockquote>
+
+<p>So that one&rsquo;s on me. I don&rsquo;t like the design, but I didn&rsquo;t know how the space worked, and I got bit. I&rsquo;ll take that one, and I&rsquo;ve got an idea at this point anyways. I let the space rebuild, it takes about 12 hours to rebuild the 350GB of data that was lost. Remember Lesson 2?</p>
+
+<blockquote>
+<p><strong>December 2015 Update:</strong> Now added is the ability to prepare a drive for removal: rather than pulling a drive and then repairing the space,  windows will now copy over all the data from that drive before you pull it.</p>
+
+<p><strong>Lesson 5: Rebuilds Are Slow</strong></p>
+
+<p>This is true even in a hardware RAID5 configuration, but you really feel it when your processor is trying to crunch the parity data to rebuild. Expect this to be a long process.</p>
+</blockquote>
+
+<p>So the rebuild is done, and all my data is inside the storage space. Success? Not yet. Time to poke in at the distribution of data. After the rebuild the distribution of raw data is as follows:</p>
+
+<ul>
+<li>3TB WD Red: 950GB</li>
+<li>2.5TB WD Green: 950GB</li>
+<li>2TB WD Green: 950GB</li>
+<li>3TB Seagate: 0GB</li>
+<li>750GB Seagate: 530GB</li>
+</ul>
+
+<p>I&rsquo;m not a fan of this. While I could totally let it go, and trust windows to balance things out over time, I&rsquo;ve got an idea. And I want to test my idea. So I pull up EASEUS partition manager (windows will absolutely not let me see the disks as individuals without removing them from the pool) and empty the 750GB seagate.</p>
+
+<p>My storage spaces panel turns yellow, the array is in a degraded state. Perfect. I can now remove the 750GB drive from the pool, and redistribute its data to the other drives, or I can add a drive. I click on add drives, and the 750GB Seagate is listed there. I click add drive, wait a minute, and get a file access error. So I reboot my PC, and head into the storage spaces panel, and successfully add the drive to the array.</p>
+
+<p>At this point there are now two listings of my 750GB Seagate in the pool, one in it&rsquo;s empty, ready to receive data state, and one listed as &ldquo;disconnected&rdquo;, with windows letting me know how much data it was holding. I remove the &ldquo;disconnected&rdquo; drive from the parity, and windows initiates the rebuild, allocating space on my drives like so:</p>
+
+<ul>
+<li>3TB WD Red: 1TB</li>
+<li>2.5TB WD Green: 1TB</li>
+<li>2TB WD Green: 1TB</li>
+<li>3TB Seagate: 120GB</li>
+<li>750GB Seagate: 120GB</li>
+</ul>
+
+<p>Okay, so this isn&rsquo;t much better. But it has taught me something.</p>
+
+<blockquote>
+<p><strong>Lesson 6: You Can Replace A Drive With Itself</strong></p>
+
+<p>Yeah, this is crazy. But, by pulling a drive and replacing it with itself, the data on the drive was distributed to the entire pool (including itself) just as new data normally would be. This means you can force a bit of a rebalance by pulling a drive and replacing it with itself.</p>
+</blockquote>
+
+<p>I&rsquo;d really like to see the results of me running this process with my 3 large drives, however I don&rsquo;t want to spend a week rebuilding the space just for some experimental data. I expect I&rsquo;d end up with the most data on the drive you first refreshed, with less and least from the 2nd and 3rd drives, with lots of data on the 3TB Seagate which is currently almost empty. The 750GB drive would probably have roughly the same 500GB as previous, maybe a little more, however storage spaces seemed to stray from loading the drive up too far.</p>
+
+<blockquote>
+<p><strong>December 2015 Update:</strong> In a recent update to windows 10, Microsoft has added the ability to optimize the distribution of data across drives. This negates the need to remove and reinsert a drive to force something resembling a rebalance.</p>
+</blockquote>
+
+    </div>
+  </div>
+
+</article>
+
+<div class="container">
+  <nav>
+  <ul class="pager">
+    
+
+    
+    <li class="next"><a href="https://jakeconnor.github.io/post/Dual-Numbers/">Using Dual Numbers to Automatically Find the Derivative of a Function <span
+      aria-hidden="true">&rarr;</span></a></li>
+    
+  </ul>
+</nav>
+
+</div>
+
+<div class="article-container">
+  
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      
+
+      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
+      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+    <script src="/js/jquery-1.12.3.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/isotope.pkgd.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-36542974-1', 'auto');
+        ga('send', 'pageview');
+
+         
+        var links = document.querySelectorAll('a');
+        Array.prototype.map.call(links, function(item) {
+            if (item.host != document.location.host) {
+                item.addEventListener('click', function() {
+                    var action = item.getAttribute('data-action') || 'follow';
+                    ga('send', 'event', 'outbound', action, item.href);
+                });
+            }
+        });
+    </script>
+    
+
+    
+    
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+
+  </body>
+</html>
+

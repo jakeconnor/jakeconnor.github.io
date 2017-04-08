@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jake Connor on Jake Connor</title>
+    <link>https://jakeconnor.github.io/index.xml</link>
+    <description>Recent content in Jake Connor on Jake Connor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Carleton Planetary Robotics Team</title>
+      <link>https://jakeconnor.github.io/project/cprt/</link>
+      <pubDate>Sun, 07 May 2017 00:29:25 -0400</pubDate>
+      
+      <guid>https://jakeconnor.github.io/project/cprt/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://cprt.wordpress.com&#34; target=&#34;_blank&#34;&gt;Carleton Planetary Robotics Team&lt;/a&gt; is entering its 4th year, and I’m proud to have been a member since its founding. The team’s primary goal is to build rovers for fun, and to compete at competitions like the University Rover Challenge, UK University Rover Challenge, and European Rover Challenge.&lt;/p&gt;
+
+&lt;p&gt;We have had a couple false starts over the years, but this year succeeded in building a rover, and bringing it with us to Manchester UK, where we competed against teams from UK, India, Bangladesh, Egypt, and Poland. We were very impressed with the rover’s performance, and are looking forward to iterating on the design this year, and making many improvements.&lt;/p&gt;
+
+&lt;p&gt;It’s difficult to get any new major project off the ground, and this team was no exception. In our first year we were designing for NASA’s Robotic Mining Challenge, but at the end of that year the competition changed its rules to prevent non-US teams from competing. We spent the following year in a state of limbo, hesitant to throw away the good work we’d done, but with little drive to move forward in the rover’s development. We continued working and learning, but did not physically build our design.
+Last September, the team set our sights on the rover challenge series, intending to design a new rover from the ground up to compete this summer. We worked hard, and were able to make it in time for the UKURC, in July.
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/cleared-it.jpg&#34; alt=&#34;H3 Clears a Series of Rocks at the UKRC2016&#34; /&gt;
+    
+    
+    &lt;caption&gt;
+        &lt;p&gt;
+        H3 Clears a Series of Rocks at the UKRC2016
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/caption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;This year I will return to my position as an electronics lead, after taking a year off while working out of town. The first goal of the electronics team this year will be to improve the assembly process for the rover, with better cable routing, cable color coding, and the use of latching connectors wherever possible. The last item there was spurred by an incident at the competition, where after carrying our rover from the hotel to the competition, a motor wire had come loose in a way that we couldn’t see with simple visual inspection. We will also be improving the testability of the internal electronics. We will achieve this by adjusting layout to make components easier to probe (in one late-night lab session my unsteady probe hand shorted a power module and fried it, requiring it be swapped with a spare), and exposing test points for components that aren’t easily probed. And since the team now has a completed rover, we will be running regular operation scenarios, which will open our eyes to more subtle problems and areas for improvement.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/N2haM_vvAiQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;p&gt;While my primary responsibility is in leadership of the electronics team, I have also been able to contribute from a design perspective:&lt;/p&gt;
+
+&lt;p&gt;I developed the power architecture for the rover, including custom PCBs, and the assembly/testing/calibration procedures.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The fully functional power system can power on and off individual subsystems as necessary, and track the power usage and regulation efficiency at the regulator level. The system can scale to over 100 independent regulators, but presently uses 6 for simplicity and due to mass constraints.&lt;/li&gt;
+&lt;li&gt;A personal goal next year is to separate the control and monitoring from the regulation, which will simplify the rover software and reduce the mass required per subsystem, which will allow greater granularity of control over the onboard power. I would also like to automate the calibration procedure, in tandem with the software team.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I also developed the rover communications link budget and hardware implementation. The rover uses 2.4GHz Wi-Fi for compliance to all competition rules and has 2 configurations.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The short-range configuration is designed for a 250m range, and uses unsteered antennas. We can achieve a 54Mbps or better link at full range and when the rover is tilted by up to 45 degrees of pitch and roll, and any yaw. The 54Mbps is sufficient to fully control the rover while receiving visual feedback from 3 high-resolution cameras, or more cameras at reduced resolution.&lt;/li&gt;
+&lt;li&gt;The longer range configuration adds a steerable high-gain antenna at the base station, and can support the above link up to 2.5km. The steering is done automatically using GPS feedback from the rover itself, and the rover is programmed to remember recent zones of good signal, and return to them.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/the-claw.jpg&#34; alt=&#34;The Claaaaaaaaaaaaaaw&#34; /&gt;
+    
+    
+    &lt;caption&gt;
+        &lt;p&gt;
+        The Claaaaaaaaaaaaaaw
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/caption&gt;
+    
+&lt;/figure&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>DOE FreeScale</title>
+      <link>https://jakeconnor.github.io/project/DOE-FreeScale/</link>
+      <pubDate>Fri, 07 Apr 2017 01:03:44 -0400</pubDate>
+      
+      <guid>https://jakeconnor.github.io/project/DOE-FreeScale/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DOE Optics</title>
+      <link>https://jakeconnor.github.io/project/DOE-Optics/</link>
+      <pubDate>Fri, 07 Apr 2017 01:03:35 -0400</pubDate>
+      
+      <guid>https://jakeconnor.github.io/project/DOE-Optics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DRDC Reverse</title>
+      <link>https://jakeconnor.github.io/project/DRDC-Reverse/</link>
+      <pubDate>Fri, 07 Apr 2017 01:02:22 -0400</pubDate>
+      
+      <guid>https://jakeconnor.github.io/project/DRDC-Reverse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DRDC Muons</title>
+      <link>https://jakeconnor.github.io/project/DRDC-Muons/</link>
+      <pubDate>Fri, 07 Apr 2017 01:02:14 -0400</pubDate>
+      
+      <guid>https://jakeconnor.github.io/project/DRDC-Muons/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MDA Antennas</title>
+      <link>https://jakeconnor.github.io/project/MDA-Antennas/</link>
+      <pubDate>Fri, 07 Apr 2017 01:02:01 -0400</pubDate>
+      
+      <guid>https://jakeconnor.github.io/project/MDA-Antennas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Organic Detectors</title>
+      <link>https://jakeconnor.github.io/project/Organic-Detectors/</link>
+      <pubDate>Fri, 07 Apr 2017 01:01:39 -0400</pubDate>
+      
+      <guid>https://jakeconnor.github.io/project/Organic-Detectors/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>260A relay</title>
+      <link>https://jakeconnor.github.io/post/260A-relay/</link>
+      <pubDate>Wed, 22 Mar 2017 00:39:43 -0400</pubDate>
+      
+      <guid>https://jakeconnor.github.io/post/260A-relay/</guid>
+      <description>&lt;p&gt;One of the fun things about being on a rover team is it gives me an opportunity to play with hardware far out of what I&amp;rsquo;d normally encounter. Much of that falls in the category of power, as we design for about a kW of draw running on 12V (for now).&lt;/p&gt;
+
+&lt;p&gt;A feature of our emergency stop system is a pair of &lt;a href=&#34;http://www.mouser.com/ds/2/418/NG_DS_V23130-X0000-A001_0612-844233.pdf&#34; target=&#34;_blank&#34;&gt;260A automotive relays&lt;/a&gt;, which I recently fried. While disappointed to have ruined a rather expensive relay, I was excited to take it apart. Pictures below, and after that an explanation of what went wrong.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/relay/top.jpg&#34; alt=&#34;My Tool of Choice&#34; /&gt;
+    
+    
+    &lt;caption&gt;
+        &lt;p&gt;
+        My Tool of Choice
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/caption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/relay/top2.jpg&#34; alt=&#34;Top Off. Lots of Copper Here&#34; /&gt;
+    
+    
+    &lt;caption&gt;
+        &lt;p&gt;
+        Top Off. Lots of Copper Here
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/caption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/relay/side.jpg&#34; alt=&#34;Sides off. The far left copper is actuated by the coil, and the top metal acts as the spring. It&amp;#39;s bistable, so the copper stays where you left it after removing coil voltage&#34; /&gt;
+    
+    
+    &lt;caption&gt;
+        &lt;p&gt;
+        Sides off. The far left copper is actuated by the coil, and the top metal acts as the spring. It&amp;#39;s bistable, so the copper stays where you left it after removing coil voltage
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/caption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/relay/back.jpg&#34; alt=&#34;The back, with contacts. Note the copper core in the coil. Did I mention it takes 3 amps to switch?&#34; /&gt;
+    
+    
+    &lt;caption&gt;
+        &lt;p&gt;
+        The back, with contacts. Note the copper core in the coil. Did I mention it takes 3 amps to switch?
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/caption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;So, what went wrong?
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/relay/schem.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+
+Well, see those reverse protection diodes? Wired power up backwards. Rover batteries were happy to pump some 200A through them. The fix? A couple new diodes.
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/relay/the-fix.jpg&#34; alt=&#34;Well that was easy.&#34; /&gt;
+    
+    
+    &lt;caption&gt;
+        &lt;p&gt;
+        Well that was easy.
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/caption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PCB Bottle Opener</title>
+      <link>https://jakeconnor.github.io/post/PCB-Opener/</link>
+      <pubDate>Wed, 04 Jan 2017 00:39:59 -0400</pubDate>
+      
+      <guid>https://jakeconnor.github.io/post/PCB-Opener/</guid>
+      <description>&lt;p&gt;So as far as I can tell, there have only been two written about attempts at making a bottle opener from a PCB, which to me is far too low a number.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=nrahtW_ET8o&#34; target=&#34;_blank&#34;&gt;Brian Benchoff&lt;/a&gt; cleverly inserted a notch into an arduino board, though found that the design wasn&amp;rsquo;t very durable.&lt;/p&gt;
+
+&lt;p&gt;And &lt;a href=&#34;https://www.youtube.com/watch?v=YuPBHMznZMI&#34; target=&#34;_blank&#34;&gt;Low Voltage Labs&lt;/a&gt; came up with a more standard opener, but in a very small form. I couldn&amp;rsquo;t find any mention of the opener on their website though, and wanted one of my own, so set out to create it from scratch.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/opener/rev1.jpg&#34; alt=&#34;First Opener Revision&#34; /&gt;
+    
+    
+    &lt;caption&gt;
+        &lt;p&gt;
+        First Opener Revision
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/caption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Because I like space, and thought they would tie into my &lt;a href=&#34;https://cprt.wordpress.com/&#34; target=&#34;_blank&#34;&gt;rover team&lt;/a&gt;, I went with a rocket ship layout, and silkscreened the team&amp;rsquo;s information on the front. After modifying to include 2 per panel, we&amp;rsquo;re able to get 20 openers from Seeed Fusion for $10USD.&lt;/p&gt;
+
+&lt;p&gt;There were certainly some concerns about strength of the FR4, but after a suitable test campaign we are satisfied with the results.&lt;/p&gt;
+
+&lt;p&gt;There is some noticeable wear on the edge that hooks under the bottle cap, which may be mitigated by including copper and a pad at that location, and the horizontal size of the hole is a little too large. It should probably be shortened a couple mm to get firm contact with the bottle cap for leverage.&lt;/p&gt;
+
+&lt;p&gt;The design is open, and available on &lt;a href=&#34;https://circuitmaker.com/Projects/Details/Jake-Connor/CPRT-Opener&#34; target=&#34;_blank&#34;&gt;Circuitmaker&lt;/a&gt; (which is lacking in handy layout features like mirrors, trims, arrays, and such) for anyone to fork and make.&lt;/p&gt;
+
+&lt;p&gt;Next steps are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;del&gt;Make it a little less flimsy by adjusting the hole size (probably making the ship bigger)&lt;/del&gt; Rev 2!&lt;/li&gt;
+&lt;li&gt;Integrate a sensor to light an LED when a bottle is being opened&lt;/li&gt;
+&lt;li&gt;Add a low power uC so the opener can count how many bottles it will open&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/opener/new.jpg&#34; alt=&#34;Revision 2: Now With More Shiny&#34; /&gt;
+    
+    
+    &lt;caption&gt;
+        &lt;p&gt;
+        Revision 2: Now With More Shiny
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/caption&gt;
+    
+&lt;/figure&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Shor&#39;s Algorithm, with Julia Examples</title>
+      <link>https://jakeconnor.github.io/post/Shors/</link>
+      <pubDate>Fri, 01 May 2015 00:40:14 -0400</pubDate>
+      
+      <guid>https://jakeconnor.github.io/post/Shors/</guid>
+      <description>&lt;p&gt;One of the often touted examples of the power of quantum computers is their ability to run Shor&amp;rsquo;s Algorithm, which is a way to quickly find the prime factors of a number, and hence defeat many of the encryption schemes used today.&lt;/p&gt;
+
+&lt;p&gt;There are many good explanations of how Shor&amp;rsquo;s algorithm works, like this &lt;a href=&#34;http://blogs.ams.org/mathgradblog/2014/04/30/shors-algorithm-breaking-rsa-encryption/#sthash.59iEnvXz.dHjm4gpG.dpbs&#34; target=&#34;_blank&#34;&gt;more conceptual overview&lt;/a&gt;, this more &lt;a href=&#34;http://tph.tuwien.ac.at/~oemer/doc/quprog/node18.html&#34; target=&#34;_blank&#34;&gt;mathematical explainer&lt;/a&gt;, or &lt;a href=&#34;http://arxiv.org/pdf/quant-ph/0303175v1.pdf&#34; target=&#34;_blank&#34;&gt;this article&lt;/a&gt; which not only explains the algorithm, but also the fundamentals of how a quantum computer operates. I&amp;rsquo;m not going to re-explain the algorithm, but instead I&amp;rsquo;m going to walk through an example, and hopefully give some insight into what the q-bits are doing.&lt;/p&gt;
+
+&lt;p&gt;The code in this post is written in &lt;a href=&#34;http://julialang.org/&#34; target=&#34;_blank&#34;&gt;Julia&lt;/a&gt;, and using the &lt;a href=&#34;https://github.com/dcjones/Gadfly.jl&#34; target=&#34;_blank&#34;&gt;Gadfly&lt;/a&gt; package for visualizations.&lt;/p&gt;
+
+&lt;p&gt;If you want to play along, you can install Julia, or you can head over to tmpnb and create a new Julia notebook (I wrote this while using version 0.3.2). If you&amp;rsquo;ve installed Julia on your own, make sure you install Gadfly using&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;Pkg.add(&amp;quot;Gadfly&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then make sure you&amp;rsquo;re using Gadly in your session with&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;using Gadfly
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And now we&amp;rsquo;re ready to walk through Shor&amp;rsquo;s algorithm.&lt;/p&gt;
+
+&lt;p&gt;We start by picking what number to factor. For speed and simplicity I&amp;rsquo;m going to choose $m=21 = 7 * 3$. We pick a number $r$, and we will find the order of $r$ in the modular group of $m$, which is 21 for us. I&amp;rsquo;m going to pick $r=2$, but any number that isn&amp;rsquo;t already a factor of $m$ will work. (And if you&amp;rsquo;ve picked a factor of $m$ congratulations, you just factored your number!). Setting these variable in Julia (I will be using &amp;gt;&amp;gt; to show the results of these commands).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;m = 7*3
+r = 2
+m,r, gcd(m,r)
+&amp;gt;&amp;gt; 21,2,1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next we need to prepare our set of qubits. Just how many we need depends on a couple of things, how large our number $m$ is, and how accurate we want our answer to be. We will have a pair of registers, whose sizes we need to decide on.&lt;/p&gt;
+
+&lt;p&gt;We are going to calculate $r^a \mod m$ for many values of a, and the first register will contain our values of a. The larger this register is, the more accurate results we will get from our Fourier transform later.&lt;/p&gt;
+
+&lt;p&gt;The second register contains the results of the above calculation. Since the result will never be larger than $m$ we need at least $\log_2 m$ bits to store those numbers. so we set&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;mbits = convert(Int,ceil(log2(m)))
+&amp;gt;&amp;gt; 5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The size of the first register is still up for debate, but I&amp;rsquo;ll just make it 5 bits larger than the second register.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;auxbits = mbits+5
+&amp;gt;&amp;gt; 10
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now we&amp;rsquo;re going to represent our qubits with a matrix, the value of the first register will be the index along the rows, and the value of the second register along the columns. This decision is entirely arbitrary, you can think of the qubit as a long list of cells, or a matrix of any shape, or even more abstract ideas. Since our 5-bit register is capable of holding values up to $2^5$, we have that many columns, and the same goes for the 10-bit register.&lt;/p&gt;
+
+&lt;p&gt;We start by initializing the matrix, note that we&amp;rsquo;re planning on putting complex numbers in it.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;qbit = zeros(Complex,2^auxbits,2^mbits)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This produces a 2-dimensional matrix, 1024 rows by 32 columns. Since every bit we add to $m$ doubles the size of this matrix, you can imagine why it&amp;rsquo;s not feasible to use this technique to simulate Shor&amp;rsquo;s algorithm on large numbers.&lt;/p&gt;
+
+&lt;p&gt;Next up it&amp;rsquo;s time to run the actual calculation for  $r^a \mod m$ on our qubit system.&lt;/p&gt;
+
+&lt;p&gt;For $a=1$ we find $2^1 \mod 21$ is 2, so we put a number in the 2nd column of the first row. We do this for each row, and eventually fill in the matrix. However the question is, what number do we put? Since we need to preserve normalization (the sum of the square norms of the elements should add up to 1) we pick $\frac{1}{\sqrt{2^{10}}}$. So we can now run this operation, and take a look at the state of the matrix using spy (reminder, the blue cells are those that have a non-zero probability of being measured).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;[qbit[nn,powermod(r,nn,m)]= 1/sqrt(2^auxbits) for nn=1:(2^auxbits)]
+spy(qbit)
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/shors/a1.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;We can already see that the results are all arranged in a small number of columns, and if we zoom into the first 50 rows&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;spy(qbit[1:50,:])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;we start to see the pattern.
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/shors/a2.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s much more clear here that the non-zero values are following a simple repeating pattern. In a perfect world we could just count off the period and use it in further calculations, but since we&amp;rsquo;re using a quantum computer we can only measure one of those cells, and not all of them. By taking the Fourier transform along the columns however, our qubit will then contain the period(s) of the function.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s where many people (including us) will diverge from the original Shor&amp;rsquo;s algorithm. While it is feasible to take the quantum Fourier transform of this entire system, it is much faster (and no less accurate) to measure the second register (along the columns). By making this measurement, we will then have only one column of non-zero values, which makes for a much faster Fourier transform.&lt;/p&gt;
+
+&lt;p&gt;To simulate making a quantum measurement, we start by finding the square norms of each column&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;col_norm2 = sum(abs2(qbit),1)
+plot(x=collect(1:2^mbits), y = col_norm2, Geom.bar)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And taking a look at it, we see
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/shors/a3.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;No surprise here, the columns with values have non-zero probabilities, the rest are non-existent. They have (roughly) the same amplitude in each, which means we&amp;rsquo;re about equally likely to measure any of these columns. We then pick a random number, to get some randomness into our measurement, and compare it to the amplitudes of the columns.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;rmeas = rand()
+loc=0
+for nn=1:2^mbits
+     if rmeas &amp;lt; col_norm2[nn]
+          loc = nn; break;
+     else
+          rmeas -= col_norm2[nn]
+     end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;At this point your results and mine will differ, that&amp;rsquo;s the fun of a random measurement. Don&amp;rsquo;t worry though, we should still end up with the same results.&lt;/p&gt;
+
+&lt;p&gt;Next up we want to take a look at that last column. The first 50 rows look like&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;plot(x=collect(1:100), y = abs(rem_col[1:100]), Geom.bar)
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/shors/a4.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Again, we have a nice evenly distributed set of qubits. Now because we want to find the period of the pattern, we take the Fourier transform, and re-normalize.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;rem_fft=fft(qbit[:,loc])
+rem_fft./=sum(abs(rem_col))
+plot(x=collect([2:2^auxbits]), y = abs(rem_fft[2:2^auxbits]),Geom.bar)
+&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://jakeconnor.github.io/img/shors/a5.png&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;Now we see we have a few large peaks, which we are most likely to measure later on. These are the dominant frequencies in the column we selected, and these are generally integer multiples of the period we&amp;rsquo;re trying to measure. So we make a quantum measurement on our remaining register, and then we can start working on guessing our period.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;loc=0
+for nn=1:2^auxbits
+  if rmeas &amp;lt; abs(rem_col[nn])
+      loc = nn; break;
+  else
+      rmeas -= abs(rem_col[nn])
+  end
+end
+
+c = loc-1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Where $c$ is our measurement of the frequency of the pattern. In a perfect world we could simply flip it to find the period, the period would be a perfect integer, and that would be that. However if you look at the plot above, you can see the peaks have some width, so there&amp;rsquo;s going to be some variance in what we measure.&lt;/p&gt;
+
+&lt;p&gt;What we want to do is scan over a set of integer numbers $z$, and find the $z$ for which the value of $\frac{zc}{2^{10}}$ is closest to an integer. I will claim that the $z$ will be somewhere between $m-3\sqrt{m}$ and $m+1-2\sqrt{m}$. So we calculate the lower and upper bounds of this range, then classically iterate over the integers within using:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;offset = ceil(m-3*sqrt(m))
+diff = floor(m +1 - 2*sqrt(m)) - offset
+dist = zeros(convert(Int,diff+1),1)
+[dist[nn+1] = abs( (nn+offset)*c/2^auxbits - round((nn+offset)*c/2^auxbits)) for nn=0:diff]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And we can grab the index of the result closest to an integer, and account for the offset to give the value $s$, which is the order of $r$, the result we need to find the prime factors of $m$.&lt;/p&gt;
+
+&lt;p&gt;There are a handful of methods to find the powers now, but the simplest conceptually is to find the gcd of s and m.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;s = indmin(dist) + offset -1
+agcd=gcd(convert(Int,s),m)
+s,agcd , m/agcd
+(9.0,3,7.0)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And we can see that 3 and 7 are the  prime roots of 21.&lt;/p&gt;
+
+&lt;p&gt;Now if you&amp;rsquo;re following along, and didn&amp;rsquo;t get the same answer, try running the program again. The probabilistic measurements mean that the algorithm is not guaranteed to find the correct answer every time. Sometimes it might take a couple tries to get the right result, but thankfully the results are easy to check for validity.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using Dual Numbers to Automatically Find the Derivative of a Function</title>
+      <link>https://jakeconnor.github.io/post/Dual-Numbers/</link>
+      <pubDate>Sat, 13 Dec 2014 00:40:30 -0400</pubDate>
+      
+      <guid>https://jakeconnor.github.io/post/Dual-Numbers/</guid>
+      <description>&lt;p&gt;Imaginary numbers are a powerful mathematical tool, however most people are only really familiar with the commonly used $i=\sqrt{-1}$. This is fair, because $i$ has uses in just about any technical field you can name, but there are others which have their own uses.&lt;/p&gt;
+
+&lt;p&gt;The dual numbers work by a definition similar to the complex numbers that $x = a + b\varepsilon$, where $\varepsilon$ is an imaginary number such that $\varepsilon^2=0$, but $\varepsilon \ne 0$&lt;/p&gt;
+
+&lt;p&gt;The usefulness of dual numbers appears when you consider the Taylor series expansion for a general function using $a+b\varepsilon$.&lt;/p&gt;
+
+&lt;p&gt;$f(a+b\varepsilon)=\sum_{n=0}^\infty \frac{f^{(n)}(a)b^n\varepsilon^n}{n!} = f(a)+bf^{&amp;lsquo;}(a)\varepsilon$&lt;/p&gt;
+
+&lt;p&gt;Where higher order terms of $\varepsilon$ drop off because $\varepsilon^2 = 0$.&lt;/p&gt;
+
+&lt;p&gt;In programming, we can take advantage of this to retrieve both the value of a function and it&amp;rsquo;s derivative, even in cases where we don&amp;rsquo;t know the derivative, or even when the function is a black box.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s an example using Julia and the package DualNumbers, but similar packages exist for most common languages. The code below is a simple implementation of Newton&amp;rsquo;s method for root finding, which is a good use because it allows us to use both the function value and its derivative from each function evaluation. (Note that each function evaluation will require more operations than we would by evaluating with a purely real number. This is because adding and subtracting require 2 operations each, and multiplication and division many more).&lt;/p&gt;
+
+&lt;p&gt;We start by defining the function under test in line 3, for this example it&amp;rsquo;s a simple quadratic, but it certainly doesn&amp;rsquo;t need to be. Line 4 defines our dual number, this syntax lets us set $x=5+1\varepsilon$. We then evaluate the function at x, and store this in y. The variable y now contains a dual number of the form $y=a+b\varepsilon$, where $a=f(5)$ and $b=\varepsilon\frac{d}{dx}f(5)$.&lt;/p&gt;
+
+&lt;p&gt;The actual work of netwons method is in line 10, where we set&lt;/p&gt;
+
+&lt;p&gt;$x^{*} = x - \frac{f(x)}{f^{&amp;lsquo;}(x)}$&lt;/p&gt;
+
+&lt;p&gt;We use&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;real(y)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to retrieve the value of the function at x, and then&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;epsilon(y)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to find the derivative. We then find the new value of y, and continue refining x until converges. The results are shown below the code.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-matlab&#34;&gt;using DualNumbers
+
+f(x) = x^2 - 2
+x = dual(5,1);
+y=f(x)
+
+@printf &amp;quot;\n\n%8s %12s %12s\n&amp;quot; &amp;quot;x&amp;quot; &amp;quot;y&amp;quot; &amp;quot;dy/dx&amp;quot;
+
+while abs(real(y)) &amp;gt; 1e-8
+     x = x - real(y)/epsilon(y)
+     y = f(x)
+     @printf &amp;quot;%8f %8e %8e\n&amp;quot; real(x) real(y) epsilon(y)
+end
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;
+       x              y          dy/dx
+5.000000   2.300000e+01   1.000000e+01
+2.700000   5.290000e+00   5.400000e+00
+1.720370   9.596742e-01   3.440741e+00
+1.441455   7.779358e-02   2.882911e+00
+1.414471   7.281571e-04   2.828942e+00
+1.414214   6.625248e-08   2.828427e+00
+1.414214   4.440892e-16   2.828427e+00
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s worth noting that things don&amp;rsquo;t to end here. By implementing your vectors using dual numbers rather than reals, you can easily compute gradients of multidimensional functions, or even the Jacobian of a vector-valued function.&lt;/p&gt;
+
+&lt;p&gt;If you want to retrieve the second derivative of a function as well (perhaps to implement Halley&amp;rsquo;s Method), you can use Hyper-Dual numbers, which simply add another different $\varepsilon$, and have an associated Julia Package.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
