@@ -145,8 +145,9 @@ Last September, the team set our sights on the rover challenge series, intending
 
 &lt;p&gt;I spent significant time on Hylas-4 (pictured above), a High Throughput Satellite with 66 Ka-band user beams divided over 4 reflectors on 2 pallets. As part of the team I worked to develop RF mitigations for mechanical issues, determine assembly tolerances, and produced reports and presentations.&lt;/p&gt;
 
-&lt;p&gt;I additionally developed a series of tools used to automatically perform tolerance sensitivity analyses on general spacecraft, and produced simple reporting data on performance effects.
-I additionally produces a specialized version of the tool for steerable antennas, that automatically determined the steering compensation that would best mitigate misalignments, and extract performance metrics from the re-steered antenna. As well as being useful on any steerable antenna project, this tool was used to justify selection of cheaper manufacturing techniques on a large-quantity project.&lt;/p&gt;
+&lt;p&gt;I additionally developed a series of tools used to automatically perform tolerance sensitivity analyses on general spacecraft, and produced simple reporting data on performance effects.&lt;/p&gt;
+
+&lt;p&gt;I additionally produced a specialized version of the tool for steerable antennas, that automatically determined the steering compensation that would best mitigate misalignments, and extract performance metrics from the re-steered antenna. As well as being useful on any steerable antenna project, this tool was used to justify selection of cheaper manufacturing techniques on a large-quantity project.&lt;/p&gt;
 
 &lt;p&gt;Finally I worked on a series of internal tools, integrating functionality from many tools into fewer (minimizing engineering time running many programs), automating common tasks, and significantly improving the speed of other tools. In one case I improved the speed of a critical-path task by a factor of 4, where in many situations this task was the slowest part of a design iteration.&lt;/p&gt;
 </description>
