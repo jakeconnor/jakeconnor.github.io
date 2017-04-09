@@ -27,12 +27,12 @@ Last September, the team set our sights on the rover challenge series, intending
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://jakeconnor.github.io/img/cleared-it.jpg&#34; alt=&#34;H3 Clears a Series of Rocks at the UKRC2016&#34; /&gt;
+        &lt;img src=&#34;https://jakeconnor.github.io/img/cleared-it.jpg&#34; alt=&#34;H3 Clears a Series of Rocks at the UKURC2016&#34; /&gt;
     
     
     &lt;caption&gt;
         &lt;p&gt;
-        H3 Clears a Series of Rocks at the UKRC2016
+        H3 Clears a Series of Rocks at the UKURC2016
         
             
         
@@ -85,6 +85,44 @@ Last September, the team set our sights on the rover challenge series, intending
     
 &lt;/figure&gt;
 
+</description>
+    </item>
+    
+    <item>
+      <title>Deploying to Github Pages with Powershell</title>
+      <link>https://jakeconnor.github.io/post/Hugo_Powershell/</link>
+      <pubDate>Sat, 08 Apr 2017 23:57:17 -0400</pubDate>
+      
+      <guid>https://jakeconnor.github.io/post/Hugo_Powershell/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve recently switch my web site to be a static site built with hugo and hosted on github&amp;rsquo;s pages. Being a statically generated site, hosted on somebody else&amp;rsquo;s computer, this setup is significantly more secure than my previous wordpress site, should be faster, and less prone to dissappearing due to a server failure.&lt;/p&gt;
+
+&lt;p&gt;Hugo has a quite useful &lt;a href=&#34;https://gohugo.io/tutorials/github-pages-blog/#hosting-personal-organization-pages&#34; target=&#34;_blank&#34;&gt;explainer&lt;/a&gt; on how to host a hugo site on github pages, including the use of &lt;del&gt;magic&lt;/del&gt; submodules to maintain a source repository and a public website repository.&lt;/p&gt;
+
+&lt;p&gt;Where they and I diverge however, is in the script to deploy. I primarily use windows computers, and powershell is more readily available than bash. So I wrote a powershell deploy script that roughly mimics theirs, and also commits and pushes to the source repository.&lt;/p&gt;
+
+&lt;p&gt;I simply saved this in my source repo as deploy.ps1, then hen I need an update, run &lt;code&gt;./deploy.ps1&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;#build site
+hugo -t academic
+
+# add files to git
+cd public
+git add -A
+
+#set up commit message
+$msg=&amp;quot;rebuilding site &amp;quot; + (Get-Date)
+If ($args[0]) {$msg = $args[0]}
+
+#commit and push public repo
+git commit -m $msg
+git push origin master
+
+#and back out and commit and push source repo
+cd ..
+git add -A
+git commit -m $msg
+git push origin master
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
@@ -154,7 +192,7 @@ Last September, the team set our sights on the rover challenge series, intending
     </item>
     
     <item>
-      <title>260A relay</title>
+      <title>Inside a 260A relay</title>
       <link>https://jakeconnor.github.io/post/260A-relay/</link>
       <pubDate>Wed, 22 Mar 2017 00:39:43 -0400</pubDate>
       

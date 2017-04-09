@@ -34,11 +34,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="https://jakeconnor.github.io/post/PCB-Opener/">
+  <link rel="canonical" href="https://jakeconnor.github.io/post/Hugo_Powershell/">
 
   
 
-  <title>PCB Bottle Opener | Jake Connor</title>
+  <title>Deploying to Github Pages with Powershell | Jake Connor</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -122,21 +122,16 @@
 <article class="article" itemscope itemtype="http://schema.org/Article">
 
   
-  <div class="article-header">
-    <img src="/img//opener/new.jpg" class="article-banner" itemprop="image">
-    
-  </div>
-  
 
   <div class="article-container">
-    <h1 itemprop="name">PCB Bottle Opener</h1>
+    <h1 itemprop="name">Deploying to Github Pages with Powershell</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
-    <time datetime="2017-01-04 00:39:59 -0400 -0400" itemprop="datePublished">
-      Wed, Jan 4, 2017
+    <time datetime="2017-04-08 23:57:17 -0400 EDT" itemprop="datePublished">
+      Sat, Apr 8, 2017
     </time>
   </span>
 
@@ -153,35 +148,35 @@
   <ul class="share">
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fjakeconnor.github.io%2fpost%2fPCB-Opener%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fjakeconnor.github.io%2fpost%2fHugo_Powershell%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=PCB%20Bottle%20Opener&amp;url=https%3a%2f%2fjakeconnor.github.io%2fpost%2fPCB-Opener%2f"
+         href="https://twitter.com/intent/tweet?text=Deploying%20to%20Github%20Pages%20with%20Powershell&amp;url=https%3a%2f%2fjakeconnor.github.io%2fpost%2fHugo_Powershell%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fjakeconnor.github.io%2fpost%2fPCB-Opener%2f&amp;title=PCB%20Bottle%20Opener"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fjakeconnor.github.io%2fpost%2fHugo_Powershell%2f&amp;title=Deploying%20to%20Github%20Pages%20with%20Powershell"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fjakeconnor.github.io%2fpost%2fPCB-Opener%2f&amp;title=PCB%20Bottle%20Opener"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fjakeconnor.github.io%2fpost%2fHugo_Powershell%2f&amp;title=Deploying%20to%20Github%20Pages%20with%20Powershell"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=PCB%20Bottle%20Opener&amp;body=https%3a%2f%2fjakeconnor.github.io%2fpost%2fPCB-Opener%2f">
+         href="mailto:?subject=Deploying%20to%20Github%20Pages%20with%20Powershell&amp;body=https%3a%2f%2fjakeconnor.github.io%2fpost%2fHugo_Powershell%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -194,63 +189,35 @@
 </div>
 
     <div class="article-style" itemprop="articleBody">
-      <p>So as far as I can tell, there have only been two written about attempts at making a bottle opener from a PCB, which to me is far too low a number.</p>
+      <p>I&rsquo;ve recently switch my web site to be a static site built with hugo and hosted on github&rsquo;s pages. Being a statically generated site, hosted on somebody else&rsquo;s computer, this setup is significantly more secure than my previous wordpress site, should be faster, and less prone to dissappearing due to a server failure.</p>
 
-<p><a href="https://www.youtube.com/watch?v=nrahtW_ET8o" target="_blank">Brian Benchoff</a> cleverly inserted a notch into an arduino board, though found that the design wasn&rsquo;t very durable.</p>
+<p>Hugo has a quite useful <a href="https://gohugo.io/tutorials/github-pages-blog/#hosting-personal-organization-pages" target="_blank">explainer</a> on how to host a hugo site on github pages, including the use of <del>magic</del> submodules to maintain a source repository and a public website repository.</p>
 
-<p>And <a href="https://www.youtube.com/watch?v=YuPBHMznZMI" target="_blank">Low Voltage Labs</a> came up with a more standard opener, but in a very small form. I couldn&rsquo;t find any mention of the opener on their website though, and wanted one of my own, so set out to create it from scratch.</p>
+<p>Where they and I diverge however, is in the script to deploy. I primarily use windows computers, and powershell is more readily available than bash. So I wrote a powershell deploy script that roughly mimics theirs, and also commits and pushes to the source repository.</p>
 
+<p>I simply saved this in my source repo as deploy.ps1, then hen I need an update, run <code>./deploy.ps1</code>.</p>
 
-<figure >
-    
-        <img src="/img/opener/rev1.jpg" alt="First Opener Revision" />
-    
-    
-    <caption>
-        <p>
-        First Opener Revision
-        
-            
-        
-        </p> 
-    </caption>
-    
-</figure>
+<pre><code class="language-powershell">#build site
+hugo -t academic
 
+# add files to git
+cd public
+git add -A
 
-<p>Because I like space, and thought they would tie into my <a href="https://cprt.wordpress.com/" target="_blank">rover team</a>, I went with a rocket ship layout, and silkscreened the team&rsquo;s information on the front. After modifying to include 2 per panel, we&rsquo;re able to get 20 openers from Seeed Fusion for $10USD.</p>
+#set up commit message
+$msg=&quot;rebuilding site &quot; + (Get-Date)
+If ($args[0]) {$msg = $args[0]}
 
-<p>There were certainly some concerns about strength of the FR4, but after a suitable test campaign we are satisfied with the results.</p>
+#commit and push public repo
+git commit -m $msg
+git push origin master
 
-<p>There is some noticeable wear on the edge that hooks under the bottle cap, which may be mitigated by including copper and a pad at that location, and the horizontal size of the hole is a little too large. It should probably be shortened a couple mm to get firm contact with the bottle cap for leverage.</p>
-
-<p>The design is open, and available on <a href="https://circuitmaker.com/Projects/Details/Jake-Connor/CPRT-Opener" target="_blank">Circuitmaker</a> (which is lacking in handy layout features like mirrors, trims, arrays, and such) for anyone to fork and make.</p>
-
-<p>Next steps are:</p>
-
-<ul>
-<li><del>Make it a little less flimsy by adjusting the hole size (probably making the ship bigger)</del> Rev 2!</li>
-<li>Integrate a sensor to light an LED when a bottle is being opened</li>
-<li>Add a low power uC so the opener can count how many bottles it will open</li>
-</ul>
-
-
-<figure >
-    
-        <img src="/img/opener/new.jpg" alt="Revision 2: Now With More Shiny" />
-    
-    
-    <caption>
-        <p>
-        Revision 2: Now With More Shiny
-        
-            
-        
-        </p> 
-    </caption>
-    
-</figure>
-
+#and back out and commit and push source repo
+cd ..
+git add -A
+git commit -m $msg
+git push origin master
+</code></pre>
 
     </div>
   </div>
@@ -261,13 +228,10 @@
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="https://jakeconnor.github.io/post/Shors/"><span
-      aria-hidden="true">&larr;</span> Shor&#39;s Algorithm, with Julia Examples</a></li>
+    <li class="previous"><a href="https://jakeconnor.github.io/post/260A-relay/"><span
+      aria-hidden="true">&larr;</span> Inside a 260A relay</a></li>
     
 
-    
-    <li class="next"><a href="https://jakeconnor.github.io/post/260A-relay/">Inside a 260A relay <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>
