@@ -38,7 +38,7 @@
 
   
 
-  <title>DOE Optics | Jake Connor</title>
+  <title>Nonlinear Optics Modeling | Jake Connor</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -100,18 +100,6 @@
 
         
         
-
-        
-
-        <li class="nav-item">
-          <a href="/#contact">
-            
-            <span>Contact</span>
-          </a>
-        </li>
-
-        
-        
       </ul>
 
     </div>
@@ -122,11 +110,16 @@
 <article class="article article-project" itemscope itemtype="http://schema.org/Article">
 
   
+  <div class="article-header">
+    <img src="/img//optics/sims.png" class="article-banner" itemprop="image">
+    <span class="article-header-caption">Demonstration of Inclusion of Optical Links in a SPICE Model</span>
+  </div>
+  
 
   <div class="article-container">
 
     <div class="pub-title">
-      <h1 itemprop="name">DOE Optics</h1>
+      <h1 itemprop="name">Nonlinear Optics Modeling</h1>
       <span class="pub-authors" itemprop="author">&nbsp;</span>
       <span class="pull-right">
         
@@ -141,28 +134,28 @@
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=DOE%20Optics&amp;url=https%3a%2f%2fjakeconnor.github.io%2fproject%2fDOE-Optics%2f"
+         href="https://twitter.com/intent/tweet?text=Nonlinear%20Optics%20Modeling&amp;url=https%3a%2f%2fjakeconnor.github.io%2fproject%2fDOE-Optics%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fjakeconnor.github.io%2fproject%2fDOE-Optics%2f&amp;title=DOE%20Optics"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fjakeconnor.github.io%2fproject%2fDOE-Optics%2f&amp;title=Nonlinear%20Optics%20Modeling"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fjakeconnor.github.io%2fproject%2fDOE-Optics%2f&amp;title=DOE%20Optics"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fjakeconnor.github.io%2fproject%2fDOE-Optics%2f&amp;title=Nonlinear%20Optics%20Modeling"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=DOE%20Optics&amp;body=https%3a%2f%2fjakeconnor.github.io%2fproject%2fDOE-Optics%2f">
+         href="mailto:?subject=Nonlinear%20Optics%20Modeling&amp;body=https%3a%2f%2fjakeconnor.github.io%2fproject%2fDOE-Optics%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -176,7 +169,21 @@
     
 
     <div class="article-style" itemprop="articleBody">
-      
+      <p>Co-simulation of optical and electronic systems is an important topic, one which I worked on the summer after my first year, under <a href="http://www.doe.carleton.ca/~tjs/" target="_blank">Prof. Smy</a>.</p>
+
+<p>An ideal simulation for optics would solve Maxwell&rsquo;s equations, but the tiny time steps needed for full accuracy would be incompatible with the comparatively large time steps of an electrical system.</p>
+
+<p>Instead, we simulate the EM wave envelope, which changes at the same timescale as the rest of the electronic circuitry.
+The envelope $A$ propagates according to the rather messy differential equation</p>
+
+<p>$ \frac{\partial A}{\partial z} + \frac{\alpha}{2}A + \beta_1\frac{\partial A}{\partial t} + \frac{i}{2}\beta_2\frac{\partial^2 A}{\partial t^2} = i\gamma|A^2|A$</p>
+
+<p>As part of a team of 3, I developed a matlab simulator that models the EM waves in waveguides and fibers, first based on split-step Fourier methods, and then based on dispersionless differential equation propagation.</p>
+
+<p>The model included coupling between forward and reverse modes, as well as reflection and transmission at the ends of the waveguide. We verified the model adequately modeled solitons, and even implemented and tested an interference based switch in the model by adjusting the waveguides parameters (in a real circuit, a waveguide&rsquo;s index of refraction can be tuned by applying a voltage or by changing the temperature).</p>
+
+<p>Later, I programmed a small SPICE simulator based on Modified Nodal Analysis, including optical sources and detectors.</p>
+
     </div>
 
   </div>
@@ -186,12 +193,9 @@
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="https://jakeconnor.github.io/project/DRDC-Reverse/"><span
-      aria-hidden="true">&larr;</span> DRDC Reverse</a></li>
-    
 
     
-    <li class="next"><a href="https://jakeconnor.github.io/project/DOE-FreeScale/">DOE FreeScale <span
+    <li class="next"><a href="https://jakeconnor.github.io/project/DOE-FreeScale/">The Freescale/NXP Cup <span
       aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
@@ -264,6 +268,11 @@
     
 
     
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    <script async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
     
 
   </body>

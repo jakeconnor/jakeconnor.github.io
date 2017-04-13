@@ -10,12 +10,12 @@
     <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Deploying to Github Pages with Powershell</title>
+      <title>Deploying Hugo to Github Pages with Powershell</title>
       <link>https://jakeconnor.github.io/post/Hugo_Powershell/</link>
       <pubDate>Sat, 08 Apr 2017 23:57:17 -0400</pubDate>
       
       <guid>https://jakeconnor.github.io/post/Hugo_Powershell/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve recently switch my web site to be a static site built with hugo and hosted on github&amp;rsquo;s pages. Being a statically generated site, hosted on somebody else&amp;rsquo;s computer, this setup is significantly more secure than my previous wordpress site, should be faster, and less prone to dissappearing due to a server failure.&lt;/p&gt;
+      <description>&lt;p&gt;I&amp;rsquo;ve recently switch my web site to be a static site built with hugo and hosted on github&amp;rsquo;s pages. Being a statically generated site, hosted on somebody else&amp;rsquo;s computer, this setup is significantly more secure than my previous wordpress site, should be faster, and less prone to disappearing due to a server failure.&lt;/p&gt;
 
 &lt;p&gt;Hugo has a quite useful &lt;a href=&#34;https://gohugo.io/tutorials/github-pages-blog/#hosting-personal-organization-pages&#34; target=&#34;_blank&#34;&gt;explainer&lt;/a&gt; on how to host a hugo site on github pages, including the use of &lt;del&gt;magic&lt;/del&gt; submodules to maintain a source repository and a public website repository.&lt;/p&gt;
 

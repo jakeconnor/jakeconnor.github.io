@@ -11,7 +11,7 @@
     <item>
       <title>Antennas for Satellites and Space Probes</title>
       <link>https://jakeconnor.github.io/project/MDA-Antennas/</link>
-      <pubDate>Fri, 07 Apr 2017 01:02:01 -0400</pubDate>
+      <pubDate>Mon, 07 Sep 2015 01:02:01 -0400</pubDate>
       
       <guid>https://jakeconnor.github.io/project/MDA-Antennas/</guid>
       <description>&lt;p&gt;I spent a year working at MDA Satellite Systems, in Montreal, designing antennas for various spacecraft.&lt;/p&gt;
@@ -25,6 +25,45 @@
 &lt;p&gt;I additionally produced a specialized version of the tool for steerable antennas, that automatically determined the steering compensation that would best mitigate misalignments, and extract performance metrics from the re-steered antenna. As well as being useful on any steerable antenna project, this tool was used to justify selection of cheaper manufacturing techniques on a large-quantity project.&lt;/p&gt;
 
 &lt;p&gt;Finally I worked on a series of internal tools, integrating functionality from many tools into fewer (minimizing engineering time running many programs), automating common tasks, and significantly improving the speed of other tools. In one case I improved the speed of a critical-path task by a factor of 4, where in many situations this task was the slowest part of a design iteration.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Freescale/NXP Cup</title>
+      <link>https://jakeconnor.github.io/project/DOE-FreeScale/</link>
+      <pubDate>Sat, 07 Sep 2013 01:03:44 -0400</pubDate>
+      
+      <guid>https://jakeconnor.github.io/project/DOE-FreeScale/</guid>
+      <description>&lt;p&gt;Waaaaaay back in 2nd year I was part of a team competing in the Freescale Cup, now called the NXP Cup.&lt;/p&gt;
+
+&lt;p&gt;The premise of the competition is that you have a 1:16 scale RC/car that must autonomously race around a track defined by a small number of painted lines. In my case the track was dictated by two black lines marking the edge of the track, and the only allowed sensor was a grayscale line scan camera, along with an onboard IMU.&lt;/p&gt;
+
+&lt;p&gt;Using an ARM Cortex M0+ processor, the team developed drivers for the motor controllers (PWM), IMU, and camera. We implemented image processing algorithms to find the lines and convert them to the vehicle coordinate system. The lines were used as input to a PID control loop that managed steering.&lt;/p&gt;
+
+&lt;p&gt;The team as we started it only existed for a year, where we developed valuable infrastructure, produced a test track, and were the first Carleton team to attend a competition. The following year the challenge was converted into a capstone project for software engineers, and is now one of the yearly offered projects.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nonlinear Optics Modeling</title>
+      <link>https://jakeconnor.github.io/project/DOE-Optics/</link>
+      <pubDate>Fri, 07 Jun 2013 01:03:35 -0400</pubDate>
+      
+      <guid>https://jakeconnor.github.io/project/DOE-Optics/</guid>
+      <description>&lt;p&gt;Co-simulation of optical and electronic systems is an important topic, one which I worked on the summer after my first year, under &lt;a href=&#34;http://www.doe.carleton.ca/~tjs/&#34; target=&#34;_blank&#34;&gt;Prof. Smy&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;An ideal simulation for optics would solve Maxwell&amp;rsquo;s equations, but the tiny time steps needed for full accuracy would be incompatible with the comparatively large time steps of an electrical system.&lt;/p&gt;
+
+&lt;p&gt;Instead, we simulate the EM wave envelope, which changes at the same timescale as the rest of the electronic circuitry.
+The envelope $A$ propagates according to the rather messy differential equation&lt;/p&gt;
+
+&lt;p&gt;$ \frac{\partial A}{\partial z} + \frac{\alpha}{2}A + \beta_1\frac{\partial A}{\partial t} + \frac{i}{2}\beta_2\frac{\partial^2 A}{\partial t^2} = i\gamma|A^2|A$&lt;/p&gt;
+
+&lt;p&gt;As part of a team of 3, I developed a matlab simulator that models the EM waves in waveguides and fibers, first based on split-step Fourier methods, and then based on dispersionless differential equation propagation.&lt;/p&gt;
+
+&lt;p&gt;The model included coupling between forward and reverse modes, as well as reflection and transmission at the ends of the waveguide. We verified the model adequately modeled solitons, and even implemented and tested an interference based switch in the model by adjusting the waveguides parameters (in a real circuit, a waveguide&amp;rsquo;s index of refraction can be tuned by applying a voltage or by changing the temperature).&lt;/p&gt;
+
+&lt;p&gt;Later, I programmed a small SPICE simulator based on Modified Nodal Analysis, including optical sources and detectors.&lt;/p&gt;
 </description>
     </item>
     
