@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Jake Connor</title>
-    <link>https://jakeconnor.github.io/post/index.xml</link>
+    <link>https://jakeconnor.com/post/index.xml</link>
     <description>Recent content in Posts on Jake Connor</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,10 +11,10 @@
     
     <item>
       <title>Deploying Hugo to Github Pages with Powershell</title>
-      <link>https://jakeconnor.github.io/post/Hugo_Powershell/</link>
+      <link>https://jakeconnor.com/post/Hugo_Powershell/</link>
       <pubDate>Sat, 08 Apr 2017 23:57:17 -0400</pubDate>
       
-      <guid>https://jakeconnor.github.io/post/Hugo_Powershell/</guid>
+      <guid>https://jakeconnor.com/post/Hugo_Powershell/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve recently switch my web site to be a static site built with hugo and hosted on github&amp;rsquo;s pages. Being a statically generated site, hosted on somebody else&amp;rsquo;s computer, this setup is significantly more secure than my previous wordpress site, should be faster, and less prone to disappearing due to a server failure.&lt;/p&gt;
 
 &lt;p&gt;Hugo has a quite useful &lt;a href=&#34;https://gohugo.io/tutorials/github-pages-blog/#hosting-personal-organization-pages&#34; target=&#34;_blank&#34;&gt;explainer&lt;/a&gt; on how to host a hugo site on github pages, including the use of &lt;del&gt;magic&lt;/del&gt; submodules to maintain a source repository and a public website repository.&lt;/p&gt;
@@ -49,10 +49,10 @@ git push origin master
     
     <item>
       <title>Inside a 260A relay</title>
-      <link>https://jakeconnor.github.io/post/260A-relay/</link>
+      <link>https://jakeconnor.com/post/260A-relay/</link>
       <pubDate>Wed, 22 Mar 2017 00:39:43 -0400</pubDate>
       
-      <guid>https://jakeconnor.github.io/post/260A-relay/</guid>
+      <guid>https://jakeconnor.com/post/260A-relay/</guid>
       <description>&lt;p&gt;One of the fun things about being on a rover team is it gives me an opportunity to play with hardware far out of what I&amp;rsquo;d normally encounter. Much of that falls in the category of power, as we design for about a kW of draw running on 12V (for now).&lt;/p&gt;
 
 &lt;p&gt;A feature of our emergency stop system is a pair of &lt;a href=&#34;http://www.mouser.com/ds/2/418/NG_DS_V23130-X0000-A001_0612-844233.pdf&#34; target=&#34;_blank&#34;&gt;260A automotive relays&lt;/a&gt;, which I recently fried. While disappointed to have ruined a rather expensive relay, I was excited to take it apart. Pictures below, and after that an explanation of what went wrong.&lt;/p&gt;
@@ -60,7 +60,7 @@ git push origin master
 &lt;p&gt;
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://jakeconnor.github.io/img/relay/top.jpg&#34; alt=&#34;My Tool of Choice&#34; /&gt;
+        &lt;img src=&#34;https://jakeconnor.com/img/relay/top.jpg&#34; alt=&#34;My Tool of Choice&#34; /&gt;
     
     
     &lt;caption&gt;
@@ -77,7 +77,7 @@ git push origin master
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://jakeconnor.github.io/img/relay/top2.jpg&#34; alt=&#34;Top Off. Lots of Copper Here&#34; /&gt;
+        &lt;img src=&#34;https://jakeconnor.com/img/relay/top2.jpg&#34; alt=&#34;Top Off. Lots of Copper Here&#34; /&gt;
     
     
     &lt;caption&gt;
@@ -94,7 +94,7 @@ git push origin master
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://jakeconnor.github.io/img/relay/side.jpg&#34; alt=&#34;Sides off. The far left copper is actuated by the coil, and the top metal acts as the spring. It&amp;#39;s bistable, so the copper stays where you left it after removing coil voltage&#34; /&gt;
+        &lt;img src=&#34;https://jakeconnor.com/img/relay/side.jpg&#34; alt=&#34;Sides off. The far left copper is actuated by the coil, and the top metal acts as the spring. It&amp;#39;s bistable, so the copper stays where you left it after removing coil voltage&#34; /&gt;
     
     
     &lt;caption&gt;
@@ -111,7 +111,7 @@ git push origin master
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://jakeconnor.github.io/img/relay/back.jpg&#34; alt=&#34;The back, with contacts. Note the copper core in the coil. Did I mention it takes 3 amps to switch?&#34; /&gt;
+        &lt;img src=&#34;https://jakeconnor.com/img/relay/back.jpg&#34; alt=&#34;The back, with contacts. Note the copper core in the coil. Did I mention it takes 3 amps to switch?&#34; /&gt;
     
     
     &lt;caption&gt;
@@ -130,7 +130,7 @@ git push origin master
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://jakeconnor.github.io/img/relay/schem.png&#34;  /&gt;
+        &lt;img src=&#34;https://jakeconnor.com/img/relay/schem.png&#34;  /&gt;
     
     
 &lt;/figure&gt;
@@ -139,7 +139,7 @@ Well, see those reverse protection diodes? Wired power up backwards. Rover batte
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://jakeconnor.github.io/img/relay/the-fix.jpg&#34; alt=&#34;Well that was easy.&#34; /&gt;
+        &lt;img src=&#34;https://jakeconnor.com/img/relay/the-fix.jpg&#34; alt=&#34;Well that was easy.&#34; /&gt;
     
     
     &lt;caption&gt;
@@ -158,10 +158,10 @@ Well, see those reverse protection diodes? Wired power up backwards. Rover batte
     
     <item>
       <title>PCB Bottle Opener</title>
-      <link>https://jakeconnor.github.io/post/PCB-Opener/</link>
+      <link>https://jakeconnor.com/post/PCB-Opener/</link>
       <pubDate>Wed, 04 Jan 2017 00:39:59 -0400</pubDate>
       
-      <guid>https://jakeconnor.github.io/post/PCB-Opener/</guid>
+      <guid>https://jakeconnor.com/post/PCB-Opener/</guid>
       <description>&lt;p&gt;So as far as I can tell, there have only been two written about attempts at making a bottle opener from a PCB, which to me is far too low a number.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=nrahtW_ET8o&#34; target=&#34;_blank&#34;&gt;Brian Benchoff&lt;/a&gt; cleverly inserted a notch into an arduino board, though found that the design wasn&amp;rsquo;t very durable.&lt;/p&gt;
@@ -171,7 +171,7 @@ Well, see those reverse protection diodes? Wired power up backwards. Rover batte
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://jakeconnor.github.io/img/opener/rev1.jpg&#34; alt=&#34;First Opener Revision&#34; /&gt;
+        &lt;img src=&#34;https://jakeconnor.com/img/opener/rev1.jpg&#34; alt=&#34;First Opener Revision&#34; /&gt;
     
     
     &lt;caption&gt;
@@ -205,7 +205,7 @@ Well, see those reverse protection diodes? Wired power up backwards. Rover batte
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://jakeconnor.github.io/img/opener/new.jpg&#34; alt=&#34;Revision 2: Now With More Shiny&#34; /&gt;
+        &lt;img src=&#34;https://jakeconnor.com/img/opener/new.jpg&#34; alt=&#34;Revision 2: Now With More Shiny&#34; /&gt;
     
     
     &lt;caption&gt;
@@ -224,10 +224,10 @@ Well, see those reverse protection diodes? Wired power up backwards. Rover batte
     
     <item>
       <title>Shor&#39;s Algorithm, with Julia Examples</title>
-      <link>https://jakeconnor.github.io/post/Shors/</link>
+      <link>https://jakeconnor.com/post/Shors/</link>
       <pubDate>Fri, 01 May 2015 00:40:14 -0400</pubDate>
       
-      <guid>https://jakeconnor.github.io/post/Shors/</guid>
+      <guid>https://jakeconnor.com/post/Shors/</guid>
       <description>&lt;p&gt;One of the often touted examples of the power of quantum computers is their ability to run Shor&amp;rsquo;s Algorithm, which is a way to quickly find the prime factors of a number, and hence defeat many of the encryption schemes used today.&lt;/p&gt;
 
 &lt;p&gt;There are many good explanations of how Shor&amp;rsquo;s algorithm works, like this &lt;a href=&#34;http://blogs.ams.org/mathgradblog/2014/04/30/shors-algorithm-breaking-rsa-encryption/#sthash.59iEnvXz.dHjm4gpG.dpbs&#34; target=&#34;_blank&#34;&gt;more conceptual overview&lt;/a&gt;, this more &lt;a href=&#34;http://tph.tuwien.ac.at/~oemer/doc/quprog/node18.html&#34; target=&#34;_blank&#34;&gt;mathematical explainer&lt;/a&gt;, or &lt;a href=&#34;http://arxiv.org/pdf/quant-ph/0303175v1.pdf&#34; target=&#34;_blank&#34;&gt;this article&lt;/a&gt; which not only explains the algorithm, but also the fundamentals of how a quantum computer operates. I&amp;rsquo;m not going to re-explain the algorithm, but instead I&amp;rsquo;m going to walk through an example, and hopefully give some insight into what the q-bits are doing.&lt;/p&gt;
@@ -290,7 +290,7 @@ spy(qbit)
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://jakeconnor.github.io/img/shors/a1.png&#34;  /&gt;
+        &lt;img src=&#34;https://jakeconnor.com/img/shors/a1.png&#34;  /&gt;
     
     
 &lt;/figure&gt;
@@ -305,7 +305,7 @@ spy(qbit)
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://jakeconnor.github.io/img/shors/a2.png&#34;  /&gt;
+        &lt;img src=&#34;https://jakeconnor.com/img/shors/a2.png&#34;  /&gt;
     
     
 &lt;/figure&gt;
@@ -325,7 +325,7 @@ plot(x=collect(1:2^mbits), y = col_norm2, Geom.bar)
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://jakeconnor.github.io/img/shors/a3.png&#34;  /&gt;
+        &lt;img src=&#34;https://jakeconnor.com/img/shors/a3.png&#34;  /&gt;
     
     
 &lt;/figure&gt;
@@ -354,7 +354,7 @@ end
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://jakeconnor.github.io/img/shors/a4.png&#34;  /&gt;
+        &lt;img src=&#34;https://jakeconnor.com/img/shors/a4.png&#34;  /&gt;
     
     
 &lt;/figure&gt;
@@ -370,7 +370,7 @@ plot(x=collect([2:2^auxbits]), y = abs(rem_fft[2:2^auxbits]),Geom.bar)
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://jakeconnor.github.io/img/shors/a5.png&#34;  /&gt;
+        &lt;img src=&#34;https://jakeconnor.com/img/shors/a5.png&#34;  /&gt;
     
     
 &lt;/figure&gt;
@@ -418,10 +418,10 @@ s,agcd , m/agcd
     
     <item>
       <title>Using Dual Numbers to Automatically Find the Derivative of a Function</title>
-      <link>https://jakeconnor.github.io/post/Dual-Numbers/</link>
+      <link>https://jakeconnor.com/post/Dual-Numbers/</link>
       <pubDate>Sat, 13 Dec 2014 00:40:30 -0400</pubDate>
       
-      <guid>https://jakeconnor.github.io/post/Dual-Numbers/</guid>
+      <guid>https://jakeconnor.com/post/Dual-Numbers/</guid>
       <description>&lt;p&gt;Imaginary numbers are a powerful mathematical tool, however most people are only really familiar with the commonly used $i=\sqrt{-1}$. This is fair, because $i$ has uses in just about any technical field you can name, but there are others which have their own uses.&lt;/p&gt;
 
 &lt;p&gt;The dual numbers work by a definition similar to the complex numbers that $x = a + b\varepsilon$, where $\varepsilon$ is an imaginary number such that $\varepsilon^2=0$, but $\varepsilon \ne 0$&lt;/p&gt;
@@ -490,10 +490,10 @@ end
     
     <item>
       <title>Adventures in Windows Parity Storage Spaces</title>
-      <link>https://jakeconnor.github.io/post/Parity-Spaces/</link>
+      <link>https://jakeconnor.com/post/Parity-Spaces/</link>
       <pubDate>Tue, 14 Jan 2014 00:40:46 -0400</pubDate>
       
-      <guid>https://jakeconnor.github.io/post/Parity-Spaces/</guid>
+      <guid>https://jakeconnor.com/post/Parity-Spaces/</guid>
       <description>&lt;p&gt;Lately as my collection of storage has grown I&amp;rsquo;ve found myself more and more in need of having some system in place, instead of a number of different hard drives which each may or may not contain something I&amp;rsquo;m looking for. I don&amp;rsquo;t have the resources to buy a number of identical drives to implement RAID, or to set up a second computer with an operating system that supports ZFS just for storage. If I really want to implement a system, it&amp;rsquo;s going to be in Windows Storage Spaces, using the parity space.&lt;/p&gt;
 
 &lt;hr /&gt;
