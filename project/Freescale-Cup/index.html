@@ -28,17 +28,17 @@
   <link rel="stylesheet" href="/css/hugo-academic.css">
   
 
-  <link rel="alternate" href="http://jakeconnor.com/tags/past/index.xml" type="application/rss+xml" title="Jake Connor">
-  <link rel="feed" href="http://jakeconnor.com/tags/past/index.xml" type="application/rss+xml" title="Jake Connor">
+  <link rel="alternate" href="http://jakeconnor.com/index.xml" type="application/rss+xml" title="Jake Connor">
+  <link rel="feed" href="http://jakeconnor.com/index.xml" type="application/rss+xml" title="Jake Connor">
 
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://jakeconnor.com/tags/past/">
+  <link rel="canonical" href="http://jakeconnor.com/project/Freescale-Cup/">
 
   
 
-  <title>Past | Jake Connor</title>
+  <title>The Freescale/NXP Cup | Jake Connor</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -107,53 +107,98 @@
 </nav>
 
 
-
-
-<div class="universal-wrapper">
-
-  <h1>Past</h1>
+<article class="article article-project" itemscope itemtype="http://schema.org/Article">
 
   
-
-  
-  
-  <div>
-    <h2><a href="http://jakeconnor.com/project/RF-and-Antenna-Design/">Antennas for Satellites and Space Probes</a></h2>
-    <div class="article-style">
-      
-      I spent a year working at MDA Satellite Systems, in Montreal, designing antennas for various spacecraft.
-My primary focus was on communications-oriented satellites, with demanding specifications and tight uncertainty budgets. I worked on projects from the early proposal stage, through (successful) contract negotiations, and through the program phase to final testing and shipping.
-I spent significant time on Hylas-4 (pictured above), a High Throughput Satellite with 66 Ka-band user beams divided over 4 reflectors on 2 pallets.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="http://jakeconnor.com/project/Freescale-Cup/">The Freescale/NXP Cup</a></h2>
-    <div class="article-style">
-      
-      Waaaaaay back in 2nd year I was part of a team competing in the Freescale Cup, now called the NXP Cup.
-The premise of the competition is that you have a 1:16 scale RC/car that must autonomously race around a track defined by a small number of painted lines. In my case the track was dictated by two black lines marking the edge of the track, and the only allowed sensor was a grayscale line scan camera, along with an onboard IMU.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="http://jakeconnor.com/project/Optics-Modeling/">Nonlinear Optics Modeling</a></h2>
-    <div class="article-style">
-      
-      Co-simulation of optical and electronic systems is an important topic, one which I worked on the summer after my first year, under Prof. Smy.
-An ideal simulation for optics would solve Maxwell&rsquo;s equations, but the tiny time steps needed for full accuracy would be incompatible with the comparatively large time steps of an electrical system.
-Instead, we simulate the EM wave envelope, which changes at the same timescale as the rest of the electronic circuitry.
-      
-    </div>
+  <div class="article-header">
+    <img src="/img//freescale/car.jpg" class="article-banner" itemprop="image">
+    
   </div>
   
 
-  
+  <div class="article-container">
 
+    <div class="pub-title">
+      <h1 itemprop="name">The Freescale/NXP Cup</h1>
+      <span class="pub-authors" itemprop="author">&nbsp;</span>
+      <span class="pull-right">
+        
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fjakeconnor.com%2fproject%2fFreescale-Cup%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=The%20Freescale%2fNXP%20Cup&amp;url=http%3a%2f%2fjakeconnor.com%2fproject%2fFreescale-Cup%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fjakeconnor.com%2fproject%2fFreescale-Cup%2f&amp;title=The%20Freescale%2fNXP%20Cup"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fjakeconnor.com%2fproject%2fFreescale-Cup%2f&amp;title=The%20Freescale%2fNXP%20Cup"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=The%20Freescale%2fNXP%20Cup&amp;body=http%3a%2f%2fjakeconnor.com%2fproject%2fFreescale-Cup%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+      </span>
+    </div>
+
+    
+
+    <div class="article-style" itemprop="articleBody">
+      <p>Waaaaaay back in 2nd year I was part of a team competing in the Freescale Cup, now called the NXP Cup.</p>
+
+<p>The premise of the competition is that you have a 1:16 scale RC/car that must autonomously race around a track defined by a small number of painted lines. In my case the track was dictated by two black lines marking the edge of the track, and the only allowed sensor was a grayscale line scan camera, along with an onboard IMU.</p>
+
+<p>Using an ARM Cortex M0+ processor, the team developed drivers for the motor controllers (PWM), IMU, and camera. We implemented image processing algorithms to find the lines and convert them to the vehicle coordinate system. The lines were used as input to a PID control loop that managed steering.</p>
+
+<p>The team as we started it only existed for a year, where we developed valuable infrastructure, produced a test track, and were the first Carleton team to attend a competition. The following year the challenge was converted into a capstone project for software engineers, and is now one of the yearly offered projects.</p>
+
+    </div>
+
+  </div>
+</article>
+
+<div class="container">
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="http://jakeconnor.com/project/Optics-Modeling/"><span
+      aria-hidden="true">&larr;</span> Nonlinear Optics Modeling</a></li>
+    
+
+    
+    <li class="next"><a href="http://jakeconnor.com/project/RF-and-Antenna-Design/">Antennas for Satellites and Space Probes <span
+      aria-hidden="true">&rarr;</span></a></li>
+    
+  </ul>
+</nav>
 
 </div>
+
 <footer class="site-footer">
   <div class="container">
     <p class="powered-by">

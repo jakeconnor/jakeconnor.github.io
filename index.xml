@@ -348,10 +348,10 @@ Well, see those reverse protection diodes? Wired power up backwards. Rover batte
     
     <item>
       <title>Antennas for Satellites and Space Probes</title>
-      <link>http://jakeconnor.com/project/MDA-Antennas/</link>
+      <link>http://jakeconnor.com/project/RF-and-Antenna-Design/</link>
       <pubDate>Mon, 07 Sep 2015 01:02:01 -0400</pubDate>
       
-      <guid>http://jakeconnor.com/project/MDA-Antennas/</guid>
+      <guid>http://jakeconnor.com/project/RF-and-Antenna-Design/</guid>
       <description>&lt;p&gt;I spent a year working at MDA Satellite Systems, in Montreal, designing antennas for various spacecraft.&lt;/p&gt;
 
 &lt;p&gt;My primary focus was on communications-oriented satellites, with demanding specifications and tight uncertainty budgets. I worked on projects from the early proposal stage, through (successful) contract negotiations, and through the program phase to final testing and shipping.&lt;/p&gt;
@@ -788,10 +788,10 @@ Lesson 6: You can replace a drive with itself&lt;/p&gt;
     
     <item>
       <title>The Freescale/NXP Cup</title>
-      <link>http://jakeconnor.com/project/DOE-FreeScale/</link>
+      <link>http://jakeconnor.com/project/Freescale-Cup/</link>
       <pubDate>Sat, 07 Sep 2013 01:03:44 -0400</pubDate>
       
-      <guid>http://jakeconnor.com/project/DOE-FreeScale/</guid>
+      <guid>http://jakeconnor.com/project/Freescale-Cup/</guid>
       <description>&lt;p&gt;Waaaaaay back in 2nd year I was part of a team competing in the Freescale Cup, now called the NXP Cup.&lt;/p&gt;
 
 &lt;p&gt;The premise of the competition is that you have a 1:16 scale RC/car that must autonomously race around a track defined by a small number of painted lines. In my case the track was dictated by two black lines marking the edge of the track, and the only allowed sensor was a grayscale line scan camera, along with an onboard IMU.&lt;/p&gt;
@@ -804,10 +804,10 @@ Lesson 6: You can replace a drive with itself&lt;/p&gt;
     
     <item>
       <title>Nonlinear Optics Modeling</title>
-      <link>http://jakeconnor.com/project/DOE-Optics/</link>
+      <link>http://jakeconnor.com/project/Optics-Modeling/</link>
       <pubDate>Fri, 07 Jun 2013 01:03:35 -0400</pubDate>
       
-      <guid>http://jakeconnor.com/project/DOE-Optics/</guid>
+      <guid>http://jakeconnor.com/project/Optics-Modeling/</guid>
       <description>&lt;p&gt;Co-simulation of optical and electronic systems is an important topic, one which I worked on the summer after my first year, under &lt;a href=&#34;http://www.doe.carleton.ca/~tjs/&#34; target=&#34;_blank&#34;&gt;Prof. Smy&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;An ideal simulation for optics would solve Maxwell&amp;rsquo;s equations, but the tiny time steps needed for full accuracy would be incompatible with the comparatively large time steps of an electrical system.&lt;/p&gt;
