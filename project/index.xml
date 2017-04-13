@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Jake Connor</title>
-    <link>https://gh.jakeconnor.com/project/index.xml</link>
+    <link>http://gh.jakeconnor.com/project/index.xml</link>
     <description>Recent content in Projects on Jake Connor</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,10 +11,10 @@
     
     <item>
       <title>Carleton Planetary Robotics Team</title>
-      <link>https://gh.jakeconnor.com/project/cprt/</link>
+      <link>http://gh.jakeconnor.com/project/cprt/</link>
       <pubDate>Sun, 07 May 2017 00:29:25 -0400</pubDate>
       
-      <guid>https://gh.jakeconnor.com/project/cprt/</guid>
+      <guid>http://gh.jakeconnor.com/project/cprt/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;https://cprt.wordpress.com&#34; target=&#34;_blank&#34;&gt;Carleton Planetary Robotics Team&lt;/a&gt; is entering its 4th year, and I’m proud to have been a member since its founding. The team’s primary goal is to build rovers for fun, and to compete at competitions like the University Rover Challenge, UK University Rover Challenge, and European Rover Challenge.&lt;/p&gt;
 
 &lt;p&gt;We have had a couple false starts over the years, but this year succeeded in building a rover, and bringing it with us to Manchester UK, where we competed against teams from UK, India, Bangladesh, Egypt, and Poland. We were very impressed with the rover’s performance, and are looking forward to iterating on the design this year, and making many improvements.&lt;/p&gt;
@@ -27,7 +27,7 @@ Last September, the team set our sights on the rover challenge series, intending
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://gh.jakeconnor.com/img/cleared-it.jpg&#34; alt=&#34;H3 Clears a Series of Rocks at the UKURC2016&#34; /&gt;
+        &lt;img src=&#34;http://gh.jakeconnor.com/img/cleared-it.jpg&#34; alt=&#34;H3 Clears a Series of Rocks at the UKURC2016&#34; /&gt;
     
     
     &lt;caption&gt;
@@ -71,7 +71,7 @@ Last September, the team set our sights on the rover challenge series, intending
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://gh.jakeconnor.com/img/the-claw.jpg&#34; alt=&#34;The Claaaaaaaaaaaaaaw&#34; /&gt;
+        &lt;img src=&#34;http://gh.jakeconnor.com/img/the-claw.jpg&#34; alt=&#34;The Claaaaaaaaaaaaaaw&#34; /&gt;
     
     
     &lt;caption&gt;
@@ -90,10 +90,10 @@ Last September, the team set our sights on the rover challenge series, intending
     
     <item>
       <title>Organic Detectors for Radiation Detection</title>
-      <link>https://gh.jakeconnor.com/project/Organic-Detectors/</link>
+      <link>http://gh.jakeconnor.com/project/Organic-Detectors/</link>
       <pubDate>Thu, 08 Sep 2016 01:01:39 -0400</pubDate>
       
-      <guid>https://gh.jakeconnor.com/project/Organic-Detectors/</guid>
+      <guid>http://gh.jakeconnor.com/project/Organic-Detectors/</guid>
       <description>&lt;p&gt;As my fourth year (capstone) project, I was part of a team that developed organic semiconducting alpha detectors. The team has not yet proven that the devices can detect alpha particles, but has showed a high degree of sensitivity to light, which is a common predictor of success at detecting radiation.&lt;/p&gt;
 
 &lt;p&gt;Typical radiation detectors are made from high purity Silicon or Germanium (HPGe), but have a couple drawbacks. The materials are brittle and inflexible, so any sensor must be made in it&amp;rsquo;s final shape. Additionally large detectors require weeks or even months of careful growth, with any impurities or imperfections reducing the efficiency of the detector. A major defect could mean scrapping the entire grown crystal and starting over, and these large detectors are highly expensive.&lt;/p&gt;
@@ -101,7 +101,7 @@ Last September, the team set our sights on the rover challenge series, intending
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://gh.jakeconnor.com/img/orgrad/y5.jpg&#34; alt=&#34;An array of Schottky Layout Detectors in Alq3&#34; /&gt;
+        &lt;img src=&#34;http://gh.jakeconnor.com/img/orgrad/y5.jpg&#34; alt=&#34;An array of Schottky Layout Detectors in Alq3&#34; /&gt;
     
     
     &lt;caption&gt;
@@ -123,7 +123,7 @@ Last September, the team set our sights on the rover challenge series, intending
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;https://gh.jakeconnor.com/img/orgrad/y6.png&#34;  /&gt;
+        &lt;img src=&#34;http://gh.jakeconnor.com/img/orgrad/y6.png&#34;  /&gt;
     
     
 &lt;/figure&gt;
@@ -135,10 +135,10 @@ Last September, the team set our sights on the rover challenge series, intending
     
     <item>
       <title>Antennas for Satellites and Space Probes</title>
-      <link>https://gh.jakeconnor.com/project/MDA-Antennas/</link>
+      <link>http://gh.jakeconnor.com/project/MDA-Antennas/</link>
       <pubDate>Mon, 07 Sep 2015 01:02:01 -0400</pubDate>
       
-      <guid>https://gh.jakeconnor.com/project/MDA-Antennas/</guid>
+      <guid>http://gh.jakeconnor.com/project/MDA-Antennas/</guid>
       <description>&lt;p&gt;I spent a year working at MDA Satellite Systems, in Montreal, designing antennas for various spacecraft.&lt;/p&gt;
 
 &lt;p&gt;My primary focus was on communications-oriented satellites, with demanding specifications and tight uncertainty budgets. I worked on projects from the early proposal stage, through (successful) contract negotiations, and through the program phase to final testing and shipping.&lt;/p&gt;
@@ -155,10 +155,10 @@ Last September, the team set our sights on the rover challenge series, intending
     
     <item>
       <title>The Freescale/NXP Cup</title>
-      <link>https://gh.jakeconnor.com/project/DOE-FreeScale/</link>
+      <link>http://gh.jakeconnor.com/project/DOE-FreeScale/</link>
       <pubDate>Sat, 07 Sep 2013 01:03:44 -0400</pubDate>
       
-      <guid>https://gh.jakeconnor.com/project/DOE-FreeScale/</guid>
+      <guid>http://gh.jakeconnor.com/project/DOE-FreeScale/</guid>
       <description>&lt;p&gt;Waaaaaay back in 2nd year I was part of a team competing in the Freescale Cup, now called the NXP Cup.&lt;/p&gt;
 
 &lt;p&gt;The premise of the competition is that you have a 1:16 scale RC/car that must autonomously race around a track defined by a small number of painted lines. In my case the track was dictated by two black lines marking the edge of the track, and the only allowed sensor was a grayscale line scan camera, along with an onboard IMU.&lt;/p&gt;
@@ -171,10 +171,10 @@ Last September, the team set our sights on the rover challenge series, intending
     
     <item>
       <title>Nonlinear Optics Modeling</title>
-      <link>https://gh.jakeconnor.com/project/DOE-Optics/</link>
+      <link>http://gh.jakeconnor.com/project/DOE-Optics/</link>
       <pubDate>Fri, 07 Jun 2013 01:03:35 -0400</pubDate>
       
-      <guid>https://gh.jakeconnor.com/project/DOE-Optics/</guid>
+      <guid>http://gh.jakeconnor.com/project/DOE-Optics/</guid>
       <description>&lt;p&gt;Co-simulation of optical and electronic systems is an important topic, one which I worked on the summer after my first year, under &lt;a href=&#34;http://www.doe.carleton.ca/~tjs/&#34; target=&#34;_blank&#34;&gt;Prof. Smy&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;An ideal simulation for optics would solve Maxwell&amp;rsquo;s equations, but the tiny time steps needed for full accuracy would be incompatible with the comparatively large time steps of an electrical system.&lt;/p&gt;
