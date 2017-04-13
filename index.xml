@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jake Connor on Jake Connor</title>
-    <link>http://gh.jakeconnor.com/index.xml</link>
+    <link>http://jakeconnor.com/index.xml</link>
     <description>Recent content in Jake Connor on Jake Connor</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,10 +11,10 @@
     
     <item>
       <title>Carleton Planetary Robotics Team</title>
-      <link>http://gh.jakeconnor.com/project/cprt/</link>
+      <link>http://jakeconnor.com/project/cprt/</link>
       <pubDate>Sun, 07 May 2017 00:29:25 -0400</pubDate>
       
-      <guid>http://gh.jakeconnor.com/project/cprt/</guid>
+      <guid>http://jakeconnor.com/project/cprt/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;https://cprt.wordpress.com&#34; target=&#34;_blank&#34;&gt;Carleton Planetary Robotics Team&lt;/a&gt; is entering its 4th year, and I’m proud to have been a member since its founding. The team’s primary goal is to build rovers for fun, and to compete at competitions like the University Rover Challenge, UK University Rover Challenge, and European Rover Challenge.&lt;/p&gt;
 
 &lt;p&gt;We have had a couple false starts over the years, but this year succeeded in building a rover, and bringing it with us to Manchester UK, where we competed against teams from UK, India, Bangladesh, Egypt, and Poland. We were very impressed with the rover’s performance, and are looking forward to iterating on the design this year, and making many improvements.&lt;/p&gt;
@@ -27,7 +27,7 @@ Last September, the team set our sights on the rover challenge series, intending
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://gh.jakeconnor.com/img/cleared-it.jpg&#34; alt=&#34;H3 Clears a Series of Rocks at the UKURC2016&#34; /&gt;
+        &lt;img src=&#34;http://jakeconnor.com/img/cleared-it.jpg&#34; alt=&#34;H3 Clears a Series of Rocks at the UKURC2016&#34; /&gt;
     
     
     &lt;caption&gt;
@@ -71,7 +71,7 @@ Last September, the team set our sights on the rover challenge series, intending
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://gh.jakeconnor.com/img/the-claw.jpg&#34; alt=&#34;The Claaaaaaaaaaaaaaw&#34; /&gt;
+        &lt;img src=&#34;http://jakeconnor.com/img/the-claw.jpg&#34; alt=&#34;The Claaaaaaaaaaaaaaw&#34; /&gt;
     
     
     &lt;caption&gt;
@@ -90,10 +90,10 @@ Last September, the team set our sights on the rover challenge series, intending
     
     <item>
       <title>Deploying Hugo to Github Pages with Powershell</title>
-      <link>http://gh.jakeconnor.com/post/Hugo_Powershell/</link>
+      <link>http://jakeconnor.com/post/Hugo_Powershell/</link>
       <pubDate>Sat, 08 Apr 2017 23:57:17 -0400</pubDate>
       
-      <guid>http://gh.jakeconnor.com/post/Hugo_Powershell/</guid>
+      <guid>http://jakeconnor.com/post/Hugo_Powershell/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve recently switch my web site to be a static site built with hugo and hosted on github&amp;rsquo;s pages. Being a statically generated site, hosted on somebody else&amp;rsquo;s computer, this setup is significantly more secure than my previous wordpress site, should be faster, and less prone to disappearing due to a server failure.&lt;/p&gt;
 
 &lt;p&gt;Hugo has a quite useful &lt;a href=&#34;https://gohugo.io/tutorials/github-pages-blog/#hosting-personal-organization-pages&#34; target=&#34;_blank&#34;&gt;explainer&lt;/a&gt; on how to host a hugo site on github pages, including the use of &lt;del&gt;magic&lt;/del&gt; submodules to maintain a source repository and a public website repository.&lt;/p&gt;
@@ -128,10 +128,10 @@ git push origin master
     
     <item>
       <title>Inside a 260A relay</title>
-      <link>http://gh.jakeconnor.com/post/260A-relay/</link>
+      <link>http://jakeconnor.com/post/260A-relay/</link>
       <pubDate>Wed, 22 Mar 2017 00:39:43 -0400</pubDate>
       
-      <guid>http://gh.jakeconnor.com/post/260A-relay/</guid>
+      <guid>http://jakeconnor.com/post/260A-relay/</guid>
       <description>&lt;p&gt;One of the fun things about being on a rover team is it gives me an opportunity to play with hardware far out of what I&amp;rsquo;d normally encounter. Much of that falls in the category of power, as we design for about a kW of draw running on 12V (for now).&lt;/p&gt;
 
 &lt;p&gt;A feature of our emergency stop system is a pair of &lt;a href=&#34;http://www.mouser.com/ds/2/418/NG_DS_V23130-X0000-A001_0612-844233.pdf&#34; target=&#34;_blank&#34;&gt;260A automotive relays&lt;/a&gt;, which I recently fried. While disappointed to have ruined a rather expensive relay, I was excited to take it apart. Pictures below, and after that an explanation of what went wrong.&lt;/p&gt;
@@ -139,7 +139,7 @@ git push origin master
 &lt;p&gt;
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://gh.jakeconnor.com/img/relay/top.jpg&#34; alt=&#34;My Tool of Choice&#34; /&gt;
+        &lt;img src=&#34;http://jakeconnor.com/img/relay/top.jpg&#34; alt=&#34;My Tool of Choice&#34; /&gt;
     
     
     &lt;caption&gt;
@@ -156,7 +156,7 @@ git push origin master
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://gh.jakeconnor.com/img/relay/top2.jpg&#34; alt=&#34;Top Off. Lots of Copper Here&#34; /&gt;
+        &lt;img src=&#34;http://jakeconnor.com/img/relay/top2.jpg&#34; alt=&#34;Top Off. Lots of Copper Here&#34; /&gt;
     
     
     &lt;caption&gt;
@@ -173,7 +173,7 @@ git push origin master
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://gh.jakeconnor.com/img/relay/side.jpg&#34; alt=&#34;Sides off. The far left copper is actuated by the coil, and the top metal acts as the spring. It&amp;#39;s bistable, so the copper stays where you left it after removing coil voltage&#34; /&gt;
+        &lt;img src=&#34;http://jakeconnor.com/img/relay/side.jpg&#34; alt=&#34;Sides off. The far left copper is actuated by the coil, and the top metal acts as the spring. It&amp;#39;s bistable, so the copper stays where you left it after removing coil voltage&#34; /&gt;
     
     
     &lt;caption&gt;
@@ -190,7 +190,7 @@ git push origin master
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://gh.jakeconnor.com/img/relay/back.jpg&#34; alt=&#34;The back, with contacts. Note the copper core in the coil. Did I mention it takes 3 amps to switch?&#34; /&gt;
+        &lt;img src=&#34;http://jakeconnor.com/img/relay/back.jpg&#34; alt=&#34;The back, with contacts. Note the copper core in the coil. Did I mention it takes 3 amps to switch?&#34; /&gt;
     
     
     &lt;caption&gt;
@@ -209,7 +209,7 @@ git push origin master
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://gh.jakeconnor.com/img/relay/schem.png&#34;  /&gt;
+        &lt;img src=&#34;http://jakeconnor.com/img/relay/schem.png&#34;  /&gt;
     
     
 &lt;/figure&gt;
@@ -218,7 +218,7 @@ Well, see those reverse protection diodes? Wired power up backwards. Rover batte
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://gh.jakeconnor.com/img/relay/the-fix.jpg&#34; alt=&#34;Well that was easy.&#34; /&gt;
+        &lt;img src=&#34;http://jakeconnor.com/img/relay/the-fix.jpg&#34; alt=&#34;Well that was easy.&#34; /&gt;
     
     
     &lt;caption&gt;
@@ -237,10 +237,10 @@ Well, see those reverse protection diodes? Wired power up backwards. Rover batte
     
     <item>
       <title>PCB Bottle Opener</title>
-      <link>http://gh.jakeconnor.com/post/PCB-Opener/</link>
+      <link>http://jakeconnor.com/post/PCB-Opener/</link>
       <pubDate>Wed, 04 Jan 2017 00:39:59 -0400</pubDate>
       
-      <guid>http://gh.jakeconnor.com/post/PCB-Opener/</guid>
+      <guid>http://jakeconnor.com/post/PCB-Opener/</guid>
       <description>&lt;p&gt;So as far as I can tell, there have only been two written about attempts at making a bottle opener from a PCB, which to me is far too low a number.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=nrahtW_ET8o&#34; target=&#34;_blank&#34;&gt;Brian Benchoff&lt;/a&gt; cleverly inserted a notch into an arduino board, though found that the design wasn&amp;rsquo;t very durable.&lt;/p&gt;
@@ -250,7 +250,7 @@ Well, see those reverse protection diodes? Wired power up backwards. Rover batte
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://gh.jakeconnor.com/img/opener/rev1.jpg&#34; alt=&#34;First Opener Revision&#34; /&gt;
+        &lt;img src=&#34;http://jakeconnor.com/img/opener/rev1.jpg&#34; alt=&#34;First Opener Revision&#34; /&gt;
     
     
     &lt;caption&gt;
@@ -284,7 +284,7 @@ Well, see those reverse protection diodes? Wired power up backwards. Rover batte
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://gh.jakeconnor.com/img/opener/new.jpg&#34; alt=&#34;Revision 2: Now With More Shiny&#34; /&gt;
+        &lt;img src=&#34;http://jakeconnor.com/img/opener/new.jpg&#34; alt=&#34;Revision 2: Now With More Shiny&#34; /&gt;
     
     
     &lt;caption&gt;
@@ -303,10 +303,10 @@ Well, see those reverse protection diodes? Wired power up backwards. Rover batte
     
     <item>
       <title>Organic Detectors for Radiation Detection</title>
-      <link>http://gh.jakeconnor.com/project/Organic-Detectors/</link>
+      <link>http://jakeconnor.com/project/Organic-Detectors/</link>
       <pubDate>Thu, 08 Sep 2016 01:01:39 -0400</pubDate>
       
-      <guid>http://gh.jakeconnor.com/project/Organic-Detectors/</guid>
+      <guid>http://jakeconnor.com/project/Organic-Detectors/</guid>
       <description>&lt;p&gt;As my fourth year (capstone) project, I was part of a team that developed organic semiconducting alpha detectors. The team has not yet proven that the devices can detect alpha particles, but has showed a high degree of sensitivity to light, which is a common predictor of success at detecting radiation.&lt;/p&gt;
 
 &lt;p&gt;Typical radiation detectors are made from high purity Silicon or Germanium (HPGe), but have a couple drawbacks. The materials are brittle and inflexible, so any sensor must be made in it&amp;rsquo;s final shape. Additionally large detectors require weeks or even months of careful growth, with any impurities or imperfections reducing the efficiency of the detector. A major defect could mean scrapping the entire grown crystal and starting over, and these large detectors are highly expensive.&lt;/p&gt;
@@ -314,7 +314,7 @@ Well, see those reverse protection diodes? Wired power up backwards. Rover batte
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://gh.jakeconnor.com/img/orgrad/y5.jpg&#34; alt=&#34;An array of Schottky Layout Detectors in Alq3&#34; /&gt;
+        &lt;img src=&#34;http://jakeconnor.com/img/orgrad/y5.jpg&#34; alt=&#34;An array of Schottky Layout Detectors in Alq3&#34; /&gt;
     
     
     &lt;caption&gt;
@@ -336,7 +336,7 @@ Well, see those reverse protection diodes? Wired power up backwards. Rover batte
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://gh.jakeconnor.com/img/orgrad/y6.png&#34;  /&gt;
+        &lt;img src=&#34;http://jakeconnor.com/img/orgrad/y6.png&#34;  /&gt;
     
     
 &lt;/figure&gt;
@@ -348,10 +348,10 @@ Well, see those reverse protection diodes? Wired power up backwards. Rover batte
     
     <item>
       <title>Antennas for Satellites and Space Probes</title>
-      <link>http://gh.jakeconnor.com/project/MDA-Antennas/</link>
+      <link>http://jakeconnor.com/project/MDA-Antennas/</link>
       <pubDate>Mon, 07 Sep 2015 01:02:01 -0400</pubDate>
       
-      <guid>http://gh.jakeconnor.com/project/MDA-Antennas/</guid>
+      <guid>http://jakeconnor.com/project/MDA-Antennas/</guid>
       <description>&lt;p&gt;I spent a year working at MDA Satellite Systems, in Montreal, designing antennas for various spacecraft.&lt;/p&gt;
 
 &lt;p&gt;My primary focus was on communications-oriented satellites, with demanding specifications and tight uncertainty budgets. I worked on projects from the early proposal stage, through (successful) contract negotiations, and through the program phase to final testing and shipping.&lt;/p&gt;
@@ -368,10 +368,10 @@ Well, see those reverse protection diodes? Wired power up backwards. Rover batte
     
     <item>
       <title>Shor&#39;s Algorithm, with Julia Examples</title>
-      <link>http://gh.jakeconnor.com/post/Shors/</link>
+      <link>http://jakeconnor.com/post/Shors/</link>
       <pubDate>Fri, 01 May 2015 00:40:14 -0400</pubDate>
       
-      <guid>http://gh.jakeconnor.com/post/Shors/</guid>
+      <guid>http://jakeconnor.com/post/Shors/</guid>
       <description>&lt;p&gt;One of the often touted examples of the power of quantum computers is their ability to run Shor&amp;rsquo;s Algorithm, which is a way to quickly find the prime factors of a number, and hence defeat many of the encryption schemes used today.&lt;/p&gt;
 
 &lt;p&gt;There are many good explanations of how Shor&amp;rsquo;s algorithm works, like this &lt;a href=&#34;http://blogs.ams.org/mathgradblog/2014/04/30/shors-algorithm-breaking-rsa-encryption/#sthash.59iEnvXz.dHjm4gpG.dpbs&#34; target=&#34;_blank&#34;&gt;more conceptual overview&lt;/a&gt;, this more &lt;a href=&#34;http://tph.tuwien.ac.at/~oemer/doc/quprog/node18.html&#34; target=&#34;_blank&#34;&gt;mathematical explainer&lt;/a&gt;, or &lt;a href=&#34;http://arxiv.org/pdf/quant-ph/0303175v1.pdf&#34; target=&#34;_blank&#34;&gt;this article&lt;/a&gt; which not only explains the algorithm, but also the fundamentals of how a quantum computer operates. I&amp;rsquo;m not going to re-explain the algorithm, but instead I&amp;rsquo;m going to walk through an example, and hopefully give some insight into what the q-bits are doing.&lt;/p&gt;
@@ -434,7 +434,7 @@ spy(qbit)
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://gh.jakeconnor.com/img/shors/a1.png&#34;  /&gt;
+        &lt;img src=&#34;http://jakeconnor.com/img/shors/a1.png&#34;  /&gt;
     
     
 &lt;/figure&gt;
@@ -449,7 +449,7 @@ spy(qbit)
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://gh.jakeconnor.com/img/shors/a2.png&#34;  /&gt;
+        &lt;img src=&#34;http://jakeconnor.com/img/shors/a2.png&#34;  /&gt;
     
     
 &lt;/figure&gt;
@@ -469,7 +469,7 @@ plot(x=collect(1:2^mbits), y = col_norm2, Geom.bar)
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://gh.jakeconnor.com/img/shors/a3.png&#34;  /&gt;
+        &lt;img src=&#34;http://jakeconnor.com/img/shors/a3.png&#34;  /&gt;
     
     
 &lt;/figure&gt;
@@ -498,7 +498,7 @@ end
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://gh.jakeconnor.com/img/shors/a4.png&#34;  /&gt;
+        &lt;img src=&#34;http://jakeconnor.com/img/shors/a4.png&#34;  /&gt;
     
     
 &lt;/figure&gt;
@@ -514,7 +514,7 @@ plot(x=collect([2:2^auxbits]), y = abs(rem_fft[2:2^auxbits]),Geom.bar)
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://gh.jakeconnor.com/img/shors/a5.png&#34;  /&gt;
+        &lt;img src=&#34;http://jakeconnor.com/img/shors/a5.png&#34;  /&gt;
     
     
 &lt;/figure&gt;
@@ -562,10 +562,10 @@ s,agcd , m/agcd
     
     <item>
       <title>Using Dual Numbers to Automatically Find the Derivative of a Function</title>
-      <link>http://gh.jakeconnor.com/post/Dual-Numbers/</link>
+      <link>http://jakeconnor.com/post/Dual-Numbers/</link>
       <pubDate>Sat, 13 Dec 2014 00:40:30 -0400</pubDate>
       
-      <guid>http://gh.jakeconnor.com/post/Dual-Numbers/</guid>
+      <guid>http://jakeconnor.com/post/Dual-Numbers/</guid>
       <description>&lt;p&gt;Imaginary numbers are a powerful mathematical tool, however most people are only really familiar with the commonly used $i=\sqrt{-1}$. This is fair, because $i$ has uses in just about any technical field you can name, but there are others which have their own uses.&lt;/p&gt;
 
 &lt;p&gt;The dual numbers work by a definition similar to the complex numbers that $x = a + b\varepsilon$, where $\varepsilon$ is an imaginary number such that $\varepsilon^2=0$, but $\varepsilon \ne 0$&lt;/p&gt;
@@ -634,10 +634,10 @@ end
     
     <item>
       <title>Adventures in Windows Parity Storage Spaces</title>
-      <link>http://gh.jakeconnor.com/post/Parity-Spaces/</link>
+      <link>http://jakeconnor.com/post/Parity-Spaces/</link>
       <pubDate>Tue, 14 Jan 2014 00:40:46 -0400</pubDate>
       
-      <guid>http://gh.jakeconnor.com/post/Parity-Spaces/</guid>
+      <guid>http://jakeconnor.com/post/Parity-Spaces/</guid>
       <description>&lt;p&gt;Lately as my collection of storage has grown I&amp;rsquo;ve found myself more and more in need of having some system in place, instead of a number of different hard drives which each may or may not contain something I&amp;rsquo;m looking for. I don&amp;rsquo;t have the resources to buy a number of identical drives to implement RAID, or to set up a second computer with an operating system that supports ZFS just for storage. If I really want to implement a system, it&amp;rsquo;s going to be in Windows Storage Spaces, using the parity space.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -788,10 +788,10 @@ Lesson 6: You can replace a drive with itself&lt;/p&gt;
     
     <item>
       <title>The Freescale/NXP Cup</title>
-      <link>http://gh.jakeconnor.com/project/DOE-FreeScale/</link>
+      <link>http://jakeconnor.com/project/DOE-FreeScale/</link>
       <pubDate>Sat, 07 Sep 2013 01:03:44 -0400</pubDate>
       
-      <guid>http://gh.jakeconnor.com/project/DOE-FreeScale/</guid>
+      <guid>http://jakeconnor.com/project/DOE-FreeScale/</guid>
       <description>&lt;p&gt;Waaaaaay back in 2nd year I was part of a team competing in the Freescale Cup, now called the NXP Cup.&lt;/p&gt;
 
 &lt;p&gt;The premise of the competition is that you have a 1:16 scale RC/car that must autonomously race around a track defined by a small number of painted lines. In my case the track was dictated by two black lines marking the edge of the track, and the only allowed sensor was a grayscale line scan camera, along with an onboard IMU.&lt;/p&gt;
@@ -804,10 +804,10 @@ Lesson 6: You can replace a drive with itself&lt;/p&gt;
     
     <item>
       <title>Nonlinear Optics Modeling</title>
-      <link>http://gh.jakeconnor.com/project/DOE-Optics/</link>
+      <link>http://jakeconnor.com/project/DOE-Optics/</link>
       <pubDate>Fri, 07 Jun 2013 01:03:35 -0400</pubDate>
       
-      <guid>http://gh.jakeconnor.com/project/DOE-Optics/</guid>
+      <guid>http://jakeconnor.com/project/DOE-Optics/</guid>
       <description>&lt;p&gt;Co-simulation of optical and electronic systems is an important topic, one which I worked on the summer after my first year, under &lt;a href=&#34;http://www.doe.carleton.ca/~tjs/&#34; target=&#34;_blank&#34;&gt;Prof. Smy&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;An ideal simulation for optics would solve Maxwell&amp;rsquo;s equations, but the tiny time steps needed for full accuracy would be incompatible with the comparatively large time steps of an electrical system.&lt;/p&gt;
