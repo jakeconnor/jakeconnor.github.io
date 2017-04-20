@@ -12,6 +12,14 @@
     
     
     <url>
+      <loc>http://jakeconnor.com/page/edu/</loc>
+      <lastmod>2017-04-19T19:12:16-04:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
       <loc>http://jakeconnor.com/post/Hugo_Powershell/</loc>
       <lastmod>2017-04-08T23:57:17-04:00</lastmod>
     </url>
@@ -119,6 +127,15 @@
     <url>
       <loc>http://jakeconnor.com/</loc>
       <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+      <loc>http://jakeconnor.com/page/</loc>
+      <lastmod>2017-04-19T19:12:16-04:00</lastmod>
       <priority>0</priority>
     </url>
     

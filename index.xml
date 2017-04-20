@@ -89,6 +89,23 @@ Last September, the team set our sights on the rover challenge series, intending
     </item>
     
     <item>
+      <title>Courses</title>
+      <link>http://jakeconnor.com/page/edu/</link>
+      <pubDate>Wed, 19 Apr 2017 19:12:16 -0400</pubDate>
+      
+      <guid>http://jakeconnor.com/page/edu/</guid>
+      <description>
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://jakeconnor.com/svg/edu.svg&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+
+</description>
+    </item>
+    
+    <item>
       <title>Deploying Hugo to Github Pages with Powershell</title>
       <link>http://jakeconnor.com/post/Hugo_Powershell/</link>
       <pubDate>Sat, 08 Apr 2017 23:57:17 -0400</pubDate>
