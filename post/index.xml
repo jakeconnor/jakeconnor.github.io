@@ -74,54 +74,6 @@ says that 70% of your professional development will come from hands-on experienc
     </item>
     
     <item>
-      <title>How to Write Resumes as an Engineering Student</title>
-      <link>http://jakeconnor.com/post/howto-resume/</link>
-      <pubDate>Tue, 30 Jan 2018 20:38:59 -0500</pubDate>
-      
-      <guid>http://jakeconnor.com/post/howto-resume/</guid>
-      <description>
-
-&lt;p&gt;I find myself giving a fair bit of advice about resumes to other students, some of which is non-conventional. To save repeating myself, I&amp;rsquo;m summarizing it here.&lt;/p&gt;
-
-&lt;p&gt;This definitely isn&amp;rsquo;t relevant to experienced engineers, but should be useful for student trying to find co-ops or entry level positions.&lt;/p&gt;
-
-&lt;h2 id=&#34;cover-letters&#34;&gt;Cover Letters&lt;/h2&gt;
-
-&lt;p&gt;Lots of students ask, &amp;ldquo;Do I need to write a cover letter for every job?&amp;rdquo;. If you want the job, write a cover letter. If you don&amp;rsquo;t care about the job, don&amp;rsquo;t write a cover letter. The exception is career fairs, where cover letters aren&amp;rsquo;t common. In that situation, a targeted cover letter is a good way to stand out.&lt;/p&gt;
-
-&lt;h2 id=&#34;one-page-or-two&#34;&gt;One page or two?&lt;/h2&gt;
-
-&lt;p&gt;One.&lt;/p&gt;
-
-&lt;h2 id=&#34;objectives-section&#34;&gt;Objectives Section&lt;/h2&gt;
-
-&lt;p&gt;Don&amp;rsquo;t bother. You are a passionate engineer who wants to change the world, and this is the ideal company to help you achieve that goal, &amp;hellip;or something like that. If you&amp;rsquo;ve written a cover letter, you should have already convinced them that you&amp;rsquo;re a good fit. If you didn&amp;rsquo;t write a cover letter, an objective section isn&amp;rsquo;t going to cover that up.&lt;/p&gt;
-
-&lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;
-
-&lt;p&gt;My advice is less standard here. Your education is probably not impressive. It&amp;rsquo;s even less impressive once you&amp;rsquo;ve graduated. The exception here is a top-notch GPA, and that&amp;rsquo;s about it. I believe even an excellent GPA is worth less than experience. My education section is at the bottom of my resume (as I&amp;rsquo;ve never had an impressive GPA in my life).&lt;/p&gt;
-
-&lt;h2 id=&#34;experience&#34;&gt;Experience&lt;/h2&gt;
-
-&lt;p&gt;Here&amp;rsquo;s the meat and potatoes. Now, you don&amp;rsquo;t need different sections for &amp;ldquo;Project Experience&amp;rdquo;, &amp;ldquo;Work Experience&amp;rdquo;, &amp;ldquo;Volunteer Experience&amp;rdquo;, or whatever. At most I&amp;rsquo;d have a section for &amp;ldquo;Relevant Experience&amp;rdquo;, and &amp;ldquo;Other Experience&amp;rdquo;, but I think its better to use ordering instead.&lt;/p&gt;
-
-&lt;p&gt;Does your experience need to be chronological? Somewhat. Start with relevant (engineering-ish) experience, in chronological order. If you&amp;rsquo;re including non-engie jobs (restaurant, sport), then below the relevant experience and in chronological order.&lt;/p&gt;
-
-&lt;p&gt;For each item, don&amp;rsquo;t just talk at a high level what you did &amp;ldquo;built a racecar&amp;rdquo;. What specific parts did you work on, like &amp;ldquo;designed the wheels for a moon-buggy&amp;rdquo;. And the product lifecycle is long. Did you propose, budget, schedule, design, model, simulate, manufacture (yourself or hire a service), assemble, debug, verify, test, and write reports? All those skills are important, and especially the communications based ones.&lt;/p&gt;
-
-&lt;p&gt;Engineers have a habit of thinking that as long as they have technical skills, they don&amp;rsquo;t need the soft skills. However it&amp;rsquo;s more of the opposite. While many students have the technical skills (are fast learners, etc.), many lack the skills to write a proposal, produce a test report, or generate presentations for customers.&lt;/p&gt;
-
-&lt;p&gt;Statistics and firm numbers are beneficial. Did you improve strength by 20%. Reduce mass by 5kg? Improve throughput by 1000QPS/server? It lets your potential employer know that you can actively contrast your chosen solution against others. Bonus points for proper trade-off studies.&lt;/p&gt;
-
-&lt;p&gt;Also: courses and labs are never experience. Projects that are part of courses are rarely experience. Capstone (senior design) projects usually count, but please show that you contributed something significant. If you&amp;rsquo;re not sure whether it counts, did you at the very least design, fabricate, verify, and test? If not, don&amp;rsquo;t bother.&lt;/p&gt;
-
-&lt;h2 id=&#34;skills-sections&#34;&gt;Skills Sections&lt;/h2&gt;
-
-&lt;p&gt;If you&amp;rsquo;re going to include a skills section, don&amp;rsquo;t just make it a list of bullet points. Include at the very least your level of proficiency in each, and if you have space, examples.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Deploying Hugo to Github Pages with Powershell</title>
       <link>http://jakeconnor.com/post/Hugo_Powershell/</link>
       <pubDate>Sat, 08 Apr 2017 23:57:17 -0400</pubDate>
