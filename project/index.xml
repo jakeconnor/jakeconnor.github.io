@@ -6,8 +6,18 @@
     <description>Recent content in Projects on Jake Connor</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 May 2017 00:29:25 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 13 Nov 2018 01:02:01 -0400</lastBuildDate>
     <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Canadian International Rover Challenge Organizing Committee</title>
+      <link>http://jakeconnor.com/project/circ/</link>
+      <pubDate>Tue, 13 Nov 2018 01:02:01 -0400</pubDate>
+      
+      <guid>http://jakeconnor.com/project/circ/</guid>
+      <description>&lt;p&gt;Since 2018, Ive been part of the organizing committee for the &lt;a href=&#34;http://circ.cstag.ca&#34; target=&#34;_blank&#34;&gt;Canadian International Rover Challenge&lt;/a&gt; (CIRC), hosted each summer in Drumheller, Alberta.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Carleton Planetary Robotics Team</title>
@@ -15,29 +25,12 @@
       <pubDate>Sun, 07 May 2017 00:29:25 -0400</pubDate>
       
       <guid>http://jakeconnor.com/project/cprt/</guid>
-      <description>&lt;p&gt;The &lt;a href=&#34;https://cprt.wordpress.com&#34; target=&#34;_blank&#34;&gt;Carleton Planetary Robotics Team&lt;/a&gt; is entering its 5th year, and I’m proud to have been a member since its founding. The team’s primary goal is to build rovers for fun, and to compete at competitions like the University Rover Challenge, UK University Rover Challenge, and European Rover Challenge.&lt;/p&gt;
+      <description>&lt;p&gt;I was a founding member of
+the &lt;a href=&#34;https://carleton.ca/cprt&#34; target=&#34;_blank&#34;&gt;Carleton Planetary Robotics Team&lt;/a&gt;, a member for 5 years, and the leader of the electronics team for 2 years. During my tenure, the team built three rovers, attended four competitions in three countries, and took home two podium finishes. I now serve as an advisor to the team, providing guidance on both team management and technical decisions.&lt;/p&gt;
 
-&lt;p&gt;This year we traveled to Drumheller, Alberta to compete at the Canadian International Rover Challenge. The team took 2nd place, missing first by a fraction of a percentage point.&lt;/p&gt;
+&lt;p&gt;In the time since the team&amp;rsquo;s founding, CPRT has grown from a few space-interested students to more than 50 members under a matrix management system, with dedicated members to business activites. CPRT is on of the largest engineering teams at Carleton, and is the most interdisciplinary team within the faculty.&lt;/p&gt;
 
-&lt;p&gt;This is the team&amp;rsquo;s second rover, the first of which we took to Manchester, UK, earning a 4th place finish.&lt;/p&gt;
-
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;http://jakeconnor.com/img/cprt/pushup.jpg&#34; alt=&#34;Sparky does pushups!&#34; /&gt;
-    
-    
-    &lt;caption&gt;
-        &lt;p&gt;
-        Sparky does pushups!
-        
-            
-        
-        &lt;/p&gt; 
-    &lt;/caption&gt;
-    
-&lt;/figure&gt;
-
+&lt;p&gt;Our first rover was nicknamed H3, and competed in Machester, UK at the United Kingdom University Rover challenge. The rover drove reliably and arm performed well, but was plagued by communications issues, as the competition was held in an urban location with a saturated 2.4GHz spectrum. Despite the issues we came away with a 4th place finish.&lt;/p&gt;
 
 
 &lt;figure &gt;
@@ -57,20 +50,17 @@
 &lt;/figure&gt;
 
 
-&lt;p&gt;I was the electronics lead of the team for 3 years, and now having graduated, I act as an advisor to the team.
-During my tenure, I designed the power architecture, link budget, wireless communications structure, and many customs PCBs. I managed 15 members of the electronics team split into 5 specialties, interfaced with the mechanical and software teams. I produced financial and mass budgets, managed purchasing, and negotiated sponsorships for the team.&lt;/p&gt;
-
-&lt;p&gt;In the time since the team&amp;rsquo;s founding, we&amp;rsquo;ve grown from a few space-interested students to more than 40 members, having competed in multiple international competitions, and become one of the leading student teams at Carleton.&lt;/p&gt;
+&lt;p&gt;Our second rover was named Waldo, and it was faster, stronger, and more agile than H3. A new arm provided 5kg of lifting ability at a full extension of 1.5 meters. Sparky could drive on flat ground at 2m/s, and tackle a 40 degree incline at speed. We brought Sparky to the first every Canadian International Rover Challenge, and took second place, falling short of first by a fraction of a point.&lt;/p&gt;
 
 
 &lt;figure &gt;
     
-        &lt;img src=&#34;http://jakeconnor.com/img/the-claw.jpg&#34; alt=&#34;The Claaaaaaaaaaaaaaw&#34; /&gt;
+        &lt;img src=&#34;http://jakeconnor.com/img/cprt/pushup.jpg&#34; alt=&#34;Sparky does pushups!&#34; /&gt;
     
     
     &lt;caption&gt;
         &lt;p&gt;
-        The Claaaaaaaaaaaaaaw
+        Sparky does pushups!
         
             
         
@@ -79,6 +69,30 @@ During my tenure, I designed the power architecture, link budget, wireless commu
     
 &lt;/figure&gt;
 
+
+&lt;p&gt;The third rover, and the last one I was involved in design for, was named Waldo. Waldo brought custom-designed aluminum wheels and new motors for a new top speed of 4m/s (15km/hr) making it the fastest rover at the CIRC. The same reliable arm was improved with a 3 finger claw that supported infinite rotation, allowing the rover to use screwdrivers effectively. And Sparky&amp;rsquo;s 2.4 GHz communications system was swapped out for a 900MHz based one, which provided a full-data rate link even behind large obstacles (we tested through buildings and bridges) at 1km of distance.&lt;/p&gt;
+
+&lt;p&gt;The team travelled to the University Rover Challenge in Utah, taking 24th place out of 96 competitors, and again the the Canadian International Rover Challenge, earning a 3rd place finish amongst a pool of competitors that now spanned four countries.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;http://jakeconnor.com/img/cprt/Waldo.jpg&#34; alt=&#34;Waldo racing across the Utah Desert&#34; /&gt;
+    
+    
+    &lt;caption&gt;
+        &lt;p&gt;
+        Waldo racing across the Utah Desert
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/caption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;I&amp;rsquo;m no longer involved in day-to-day work at CPRT, but their &lt;a href=&#34;https://carleton.ca/cprt&#34; target=&#34;_blank&#34;&gt;website&lt;/a&gt; will include details of future rovers, events, and competitions. Because CPRT was such a valuable part of my education, I&amp;rsquo;ve transitioned into organizing the &lt;a href=&#34;circ.cstag.ca&#34; target=&#34;_blank&#34;&gt;Canadian International Rover Challenge&lt;/a&gt;, to help future students have the same learning opportunities I did.&lt;/p&gt;
 </description>
     </item>
     
@@ -88,7 +102,7 @@ During my tenure, I designed the power architecture, link budget, wireless commu
       <pubDate>Thu, 08 Sep 2016 01:01:39 -0400</pubDate>
       
       <guid>http://jakeconnor.com/project/Organic-Detectors/</guid>
-      <description>&lt;p&gt;As my fourth year (capstone) project, I was part of a team that developed organic semiconducting alpha detectors. The team has not yet proven that the devices can detect alpha particles, but has showed a high degree of sensitivity to light, which is a common predictor of success at detecting radiation.&lt;/p&gt;
+      <description>&lt;p&gt;As my fourth year (capstone) project, I was part of a team that developed organic semiconducting alpha detectors. The team did not prove that the devices can detect alpha particles, but showed a high degree of sensitivity to light, which is a common predictor of success at detecting radiation.&lt;/p&gt;
 
 &lt;p&gt;Typical radiation detectors are made from high purity Silicon or Germanium (HPGe), but have a couple drawbacks. The materials are brittle and inflexible, so any sensor must be made in it&amp;rsquo;s final shape. Additionally large detectors require weeks or even months of careful growth, with any impurities or imperfections reducing the efficiency of the detector. A major defect could mean scrapping the entire grown crystal and starting over, and these large detectors are highly expensive.&lt;/p&gt;
 
@@ -112,7 +126,7 @@ During my tenure, I designed the power architecture, link budget, wireless commu
 
 &lt;p&gt;The organic materials we pursued are flexible, meaning we could build a detector and roll it into a tube, and place a source in the center, maximizing solid-angle coverage. Additionally the fabrication processes we use do not require careful crystal growth, and could be used to manufacture large detectors with ease.&lt;/p&gt;
 
-&lt;p&gt;My contribution to the project was primarily in modeling the radiation interaction with our detectors. For alpha interaction, this was primarily limited to using &lt;a href=&#34;http://www.srim.org/&#34; target=&#34;_blank&#34;&gt;SRIM&lt;/a&gt; to determine a lower bound on the detector thickness, as alpha particles are easily stopped. Once we had determined that the thickness would be constrained by the manufacturing process rather than alpha interaction, I moved on to modeling beta interaction.&lt;/p&gt;
+&lt;p&gt;My contribution to the project was primarily in modeling the radiation interaction with our detectors. For alpha interaction, this was primarily limited to using &lt;a href=&#34;http://www.srim.org/&#34; target=&#34;_blank&#34;&gt;SRIM&lt;/a&gt; to determine a lower bound on the detector thickness, as alpha particles are easily stopped. Once we had determined that the lower bound for thickness would be constrained by the manufacturing process rather than alpha interaction, I moved on to modeling beta interaction.&lt;/p&gt;
 
 
 &lt;figure &gt;
@@ -123,7 +137,13 @@ During my tenure, I designed the power architecture, link budget, wireless commu
 &lt;/figure&gt;
 
 
-&lt;p&gt;For detecting beta particles, the model is more important. Beta particles are difficult to stop, and will travel far in a material in a straight line. Fortunately for the detector designers, beta particles don&amp;rsquo;t travel in a straight line in a detector. Unfortunately for me, their path is complicated to model. I implemented a monte-carlo simulation based on scattering cross sections and using the relativistic Bethe-Bloch equations for linear stopping power. This simulation allows extraction of useful parameters like effective stopping power, range, and straggle, and would support the design process for any beta detectors.&lt;/p&gt;
+&lt;p&gt;For detecting beta particles, the model is more important.
+Beta particles are difficult to stop, and if they&amp;rsquo;re traveling in a straight line, cover significant distance.
+Fortunately for the detector designers, beta particles don&amp;rsquo;t travel in a straight line in a detector. Instead they bounce and ricochet around within the material, with their overall path curving, turning, or even doubling back on itself.&lt;/p&gt;
+
+&lt;p&gt;This path is complicated to model due to the speeds and interactions involved.
+I implemented a monte-carlo simulation using the Bethe-Bloch equations at relativistic energies. The simulations builds a large number of potential paths through the material, and can the be summarized to extract bulk parameters.
+These parameters include effective stopping power, range, and straggle, and directly support the design process for any beta detectors.&lt;/p&gt;
 </description>
     </item>
     
